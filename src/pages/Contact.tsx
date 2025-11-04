@@ -4,6 +4,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { ArrowLeft, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Navigation from "@/components/Navigation";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,18 +35,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Navigation Back */}
-      <div className="bg-primary py-4">
-        <div className="container mx-auto px-4">
-          <Link to="/">
-            <Button variant="ghost" className="text-white hover:bg-white/10">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </div>
+     
+      <div className="min-h-screen bg-background pt-20">
+      {/* Shared Navigation (same as Home) */}
+      <Navigation />
+
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-primary text-white">
@@ -64,7 +59,7 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Information */}
             <div className="animate-slide-up">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue mb-8">
                 Get In Touch
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -78,7 +73,7 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-navy-900" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-primary mb-2">Phone</h3>
+                    <h3 className="text-xl font-semibold text-blue mb-2">Phone</h3>
                     <p className="text-muted-foreground">1-800-APEX-LOG (1-800-273-9564)</p>
                     <p className="text-muted-foreground">Direct: (865) 555-0123</p>
                   </div>
@@ -89,7 +84,7 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-navy-900" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-primary mb-2">Email</h3>
+                    <h3 className="text-xl font-semibold text-blue mb-2">Email</h3>
                     <p className="text-muted-foreground">info@apexlinklogistics.com</p>
                     <p className="text-muted-foreground">sales@apexlinklogistics.com</p>
                   </div>
@@ -100,7 +95,7 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-navy-900" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-primary mb-2">Address</h3>
+                    <h3 className="text-xl font-semibold text-blue mb-2">Address</h3>
                     <p className="text-muted-foreground">
                       1250 Commerce Drive<br />
                       Knoxville, TN 37919<br />
@@ -114,7 +109,7 @@ const Contact = () => {
                     <Clock className="w-6 h-6 text-navy-900" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-primary mb-2">Business Hours</h3>
+                    <h3 className="text-xl font-semibold text-blue mb-2">Business Hours</h3>
                     <p className="text-muted-foreground">
                       Monday - Friday: 7:00 AM - 7:00 PM EST<br />
                       Saturday: 8:00 AM - 4:00 PM EST<br />
@@ -128,7 +123,7 @@ const Contact = () => {
             {/* Lead Generation Form */}
             <div className="animate-slide-up">
               <div className="bg-secondary p-8 rounded-lg shadow-soft">
-                <h2 className="text-3xl font-bold text-primary mb-6">
+                <h2 className="text-3xl font-bold text-blue mb-6">
                   Request a Free Quote
                 </h2>
                 <p className="text-muted-foreground mb-8">
@@ -147,7 +142,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-blue mb-2">
                         Full Name *
                       </label>
                       <Input
@@ -162,7 +157,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-primary mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-blue mb-2">
                         Phone Number *
                       </label>
                       <Input
@@ -179,7 +174,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-blue mb-2">
                       Email Address *
                     </label>
                     <Input
@@ -195,7 +190,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-blue mb-2">
                       Message *
                     </label>
                     <Textarea
@@ -213,7 +208,7 @@ const Contact = () => {
                     type="submit" 
                     variant="cta" 
                     size="lg" 
-                    className="w-full text-lg py-4"
+                    className="w-full text-lg py-4 bg-orange"
                     disabled={showSuccess}
                   >
                     {showSuccess ? "Message Sent!" : "Send Message"}
@@ -236,26 +231,18 @@ const Contact = () => {
             Need Immediate Assistance?
           </h2>
           <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
-            For urgent logistics needs or time-sensitive shipments, call our dedicated support line.
+            We’re here to assist you with all your facility management, exterior services, and construction needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               variant="cta" 
               size="lg" 
-              className="text-lg px-8 py-4"
+              className="text-lg px-8 py-4 bg-orange"
               asChild
             >
               <a href="tel:18002739564">Call Now: 1-800-APEX-LOG</a>
             </Button>
-            <Link to="/services">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-navy-900"
-              >
-                View Our Services
-              </Button>
-            </Link>
+           
           </div>
         </div>
       </section>

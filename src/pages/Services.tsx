@@ -1,84 +1,86 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Truck, Package, Ship, Warehouse, MapPin } from "lucide-react";
+import { ArrowLeft, Truck, Package, Ship, Warehouse, MapPin, Hand, BellElectric, LucideBellElectric } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
 
 const services = [
   {
-    icon: Truck,
-    title: "Truckload (TL)",
-    description: "Full truckload transportation services with dedicated capacity for large shipments. Our extensive carrier network ensures reliable, on-time delivery across North America.",
+    icon: Hand,
+    title: "General Maintenance & Handyman",
+    description: "Our general maintenance and handyman services are built to support the day-to-day functionality, safety, and appearance of your facility. From small fixes to larger repair projects, we ensure every task is handled with precision and professionalism.",
     features: [
-      "Dedicated truck capacity for your shipments",
-      "Advanced GPS tracking and real-time updates",
-      "Expedited and standard delivery options",
-      "Temperature-controlled and specialized equipment"
+      "Interior & Exterior Painting",
+      "Drywall Installation, Repair & Patching",
+      "Carpentry Services (Repairs, Framing, Trim Work)",
+      "Door & Window Repairs",
+      "General Repairs & Touch-Ups"
     ],
-    benefits: "Ideal for large shipments requiring dedicated capacity and faster transit times."
-  },
-  {
-    icon: Package,
-    title: "Less Than Truckload (LTL)",
-    description: "Cost-effective LTL shipping solutions for smaller freight that doesn't require a full truck. Consolidate shipments with other customers to optimize costs and reduce environmental impact.",
-    features: [
-      "Shared truck space for cost optimization",
-      "Regional and national LTL networks",
-      "Flexible pickup and delivery scheduling",
-      "Freight classification and optimization services"
-    ],
-    benefits: "Perfect for smaller shipments where cost efficiency is paramount without compromising service quality."
-  },
-  {
-    icon: Ship,
-    title: "Intermodal Transport",
-    description: "Seamless integration of multiple transportation modes including rail, truck, and ocean freight. Leverage the efficiency of rail with the flexibility of trucking for long-distance shipments.",
-    features: [
-      "Rail and truck transportation integration",
-      "Container management and tracking",
-      "Cross-docking and transloading services",
-      "Customs clearance and documentation"
-    ],
-    benefits: "Combines cost savings of rail transport with door-to-door trucking convenience for optimal efficiency."
+    benefits: "Perfect for all-around repairs, installations, and upkeep to keep your property in top shape."
   },
   {
     icon: Warehouse,
-    title: "Warehousing & Distribution",
-    description: "State-of-the-art warehousing facilities with advanced inventory management systems. From storage to pick-and-pack fulfillment, we handle your inventory with precision and care.",
+    title: "Plumbing Services",
+    description: "Our comprehensive plumbing solutions are designed to keep your systems running smoothly, efficiently, and up to code. From routine maintenance to complex repairs, we cover it all:",
     features: [
-      "Climate-controlled storage environments",
-      "Real-time inventory management systems",
-      "Pick, pack, and fulfillment services",
-      "Cross-docking and consolidation services"
+      "Preventive Maintenance & System Inspections",
+      "Pipe, Fixture, Sink, Toilet, Urinal & Drain Installations & Repairs",
+      "Boiler & Water Heater Installations & Repairs",
+      "Drain & Duct Maintenance",
+      "Piping & Sewer System Management"
     ],
-    benefits: "Reduce overhead costs while maintaining optimal inventory levels and fast order fulfillment capabilities."
+    benefits: "Perfect for resolving leaks, blockages, and all plumbing-related issues efficiently and professionally."
+  },
+  {
+    icon: Ship,
+    title: "Renovation Services",
+    description: "We offer full-service renovation solutions tailored to modernize and upgrade your facilities, improving functionality, compliance, and visual appeal. Whether it’s a single-room refresh or a full-scale build-out, we deliver quality, efficiency, and minimal disruption:",
+    features: [
+      "Interior & Exterior Renovations",
+      "Office, Retail, and Commercial Buildouts",
+      "Flooring, Walls, & Ceiling Upgrades",
+      "Fixture & Finish Installations",
+      "Project Management & Coordination",
+      "Custom Carpentry & Millwork"
+    ],
+    benefits: "Perfect for revitalizing your home or workspace with modern designs and quality craftsmanship."
+  },
+  {
+    icon: BellElectric,
+    title: "Electrical Services",
+    description: "Our electrical services are built to ensure safety, efficiency, and uninterrupted operations. Whether it’s routine upkeep or urgent repairs, we provide complete solutions tailored to your facility’s needs:",
+    features: [
+      "Generator Installations & Maintenance",
+      "Surge Protection & Grounding Solutions",
+      "Electrical Troubleshooting & Diagnostics",
+      "Preventive Maintenance & System Inspections",
+      "Interior & Exterior Lighting Installations & Repairs",
+      "Panel Upgrades, Circuit Breaker Replacements & Fuse Services"
+
+    ],
+    benefits: "Ideal for installations, repairs, and maintenance to ensure safe and efficient electrical systems."
   },
   {
     icon: MapPin,
-    title: "Port Services",
-    description: "Comprehensive port logistics including container handling, customs clearance, and inland transportation. Streamline your international shipping with our experienced port operations team.",
+    title: "HVAC/R Services",
+    description: "Our HVAC/R solutions are designed to maintain optimal climate control, energy efficiency, and system reliability across your facility. From preventive care to emergency repairs, we ensure your heating, cooling, and refrigeration systems perform at their best:",
     features: [
-      "Container pickup and delivery coordination",
-      "Customs brokerage and clearance",
-      "Port storage and consolidation",
-      "International shipping documentation"
+      "HVAC Installations & Replacements",
+      "Refrigeration System Maintenance & Repairs",
+      "Duct Cleaning, Sealing & Balancing",
+      "Refrigerant Leak Detection & Charging",
+      "International shipping documentation",
+      "Heating & Cooling Repairs (Furnaces, Heat Pumps, AC Units)",
     ],
-    benefits: "Simplify international trade with end-to-end port logistics and customs expertise."
+    benefits: "Delivering high-quality renovations to refresh, modernize, and elevate any space."
   }
 ];
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Navigation Back */}
-      <div className="bg-primary py-4">
-        <div className="container mx-auto px-4">
-          <Link to="/">
-            <Button variant="ghost" className="text-white hover:bg-white/10">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </div>
+     <div className="min-h-screen bg-background pt-20">
+      <Navigation />
+
+        
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-primary text-white">
@@ -110,7 +112,7 @@ const Services = () => {
                       <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mr-4">
                         <Icon className="w-8 h-8 text-navy-900" />
                       </div>
-                      <h2 className="text-3xl md:text-4xl font-bold text-primary">
+                      <h2 className="text-3xl md:text-4xl font-bold text-blue">
                         {service.title}
                       </h2>
                     </div>
@@ -118,7 +120,7 @@ const Services = () => {
                       {service.description}
                     </p>
                     <div className="bg-secondary/50 p-6 rounded-lg mb-6">
-                      <h3 className="text-xl font-semibold text-primary mb-4">Key Features</h3>
+                      <h3 className="text-xl font-semibold text-blue mb-4">Key Features</h3>
                       <ul className="space-y-2">
                         {service.features.map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-start">
@@ -129,7 +131,7 @@ const Services = () => {
                       </ul>
                     </div>
                     <div className="bg-primary/5 p-4 rounded-lg border-l-4 border-accent">
-                      <p className="text-primary font-medium">{service.benefits}</p>
+                      <p className="text-blue font-medium">{service.benefits}</p>
                     </div>
                   </div>
                   
@@ -139,15 +141,17 @@ const Services = () => {
                         <Icon className="w-16 h-16 text-navy-900" />
                       </div>
                       <div className="text-center">
-                        <h3 className="text-2xl font-bold text-primary mb-4">
+                        <h3 className="text-2xl font-bold text-blue mb-4">
                           Ready to Get Started?
                         </h3>
                         <p className="text-muted-foreground mb-6">
                           Contact our team to discuss how {service.title.toLowerCase()} can optimize your supply chain.
                         </p>
-                        <Button variant="cta" size="lg">
-                          Request Quote
-                        </Button>
+                        <Link to="/contact">
+                          <Button variant="cta" size="lg" className="bg-orange">
+                            Request Quote
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -159,9 +163,9 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-secondary">
+      <section className="py-20 bg-primary ">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-orange mb-6 animate-fade-in">
             Need a Custom Solution?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -170,7 +174,7 @@ const Services = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button variant="cta" size="lg" className="text-lg px-8 py-4">
+              <Button variant="cta" size="lg" className="text-lg px-8 py-4 bg-orange">
                 Contact Our Experts
               </Button>
             </Link>
@@ -183,6 +187,7 @@ const Services = () => {
         </div>
       </section>
     </div>
+   
   );
 };
 

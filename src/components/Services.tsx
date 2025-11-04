@@ -28,7 +28,7 @@ const Services = () => {
     <section className="py-20 bg-secondary" id="services">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue mb-6">
             Comprehensive 3PL Services
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -46,10 +46,10 @@ const Services = () => {
                 className="bg-card p-8 rounded-lg shadow-soft hover:shadow-medium transition-all duration-300 group text-center animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="w-8 h-8 text-navy-900" />
                 </div>
-                <h3 className="text-xl font-semibold text-primary mb-4">
+                <h3 className="text-xl font-semibold text-blue mb-4">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">

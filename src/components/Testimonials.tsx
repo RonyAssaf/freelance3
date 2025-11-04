@@ -29,7 +29,7 @@ const Testimonials = () => {
     <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue mb-6">
             What Our Clients Say
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -53,13 +53,13 @@ const Testimonials = () => {
                 "{testimonial.content}"
               </blockquote>
               <div className="border-t pt-4">
-                <div className="font-semibold text-primary text-lg">
+                <div className="font-semibold text-blue text-lg">
                   {testimonial.name}
                 </div>
                 <div className="text-muted-foreground">
                   {testimonial.role}
                 </div>
-                <div className="text-accent font-medium">
+                <div className="text-orange font-medium">
                   {testimonial.company}
                 </div>
               </div>

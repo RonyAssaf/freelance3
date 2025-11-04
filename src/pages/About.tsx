@@ -1,21 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Award, Users, Heart, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
+
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Navigation Back */}
-      <div className="bg-primary py-4">
-        <div className="container mx-auto px-4">
-          <Link to="/">
-            <Button variant="ghost" className="text-white hover:bg-white/10">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </div>
+        <div className="min-h-screen bg-background pt-20">
+      {/* Shared Navigation (same as Home) */}
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-primary text-white">
@@ -34,7 +27,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-up">
-              <h2 className="text-4xl font-bold text-primary mb-6">Our Story</h2>
+              <h2 className="text-4xl font-bold text-blue mb-6">Our Story</h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
                   Founded in 2003, ApexLink Logistics began as a vision to revolutionize supply chain 
@@ -57,14 +50,14 @@ const About = () => {
             </div>
             <div className="animate-slide-up">
               <div className="bg-secondary p-8 rounded-lg shadow-soft">
-                <h3 className="text-2xl font-bold text-primary mb-6">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-blue mb-6">Our Mission</h3>
                 <blockquote className="text-lg text-muted-foreground italic leading-relaxed mb-6">
                   "To empower businesses with seamless, technology-driven logistics solutions that 
                   optimize operations, reduce costs, and accelerate growth while maintaining the 
                   highest standards of service excellence."
                 </blockquote>
                 <div className="border-t pt-6">
-                  <h4 className="text-xl font-semibold text-primary mb-4">Our Vision</h4>
+                  <h4 className="text-xl font-semibold text-blue mb-4">Our Vision</h4>
                   <p className="text-muted-foreground">
                     To be the most trusted logistics partner, known for innovation, reliability, 
                     and exceptional service that transforms how businesses manage their supply chains.
@@ -80,7 +73,7 @@ const About = () => {
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue mb-6">
               Leadership Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -114,14 +107,14 @@ const About = () => {
                 className="bg-card p-8 rounded-lg shadow-soft hover:shadow-medium transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-32 h-32 bg-gradient-accent rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Users className="w-16 h-16 text-navy-900" />
+                <div className="w-32 h-32 bg-orange rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Users className="w-16 h-16 text-blue" />
                   <span className="sr-only">High-quality, professional headshot of {leader.name}</span>
                 </div>
-                <h3 className="text-xl font-bold text-primary text-center mb-2">
+                <h3 className="text-xl font-bold text-blue text-center mb-2">
                   {leader.name}
                 </h3>
-                <p className="text-accent font-semibold text-center mb-4">
+                <p className="text-orange font-semibold text-center mb-4">
                   {leader.role}
                 </p>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
@@ -142,7 +135,7 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-blue mb-6">
               Our Culture & Values
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -177,13 +170,13 @@ const About = () => {
               return (
                 <div 
                   key={index}
-                  className="text-center animate-slide-up"
+                  className="text-center animate-slide-up "
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 hover:bg-gradient-accent hover:scale-110 transition-all duration-300 group">
+                  <div className="w-20 h-20 bg-blue rounded-full flex items-center justify-center mx-auto mb-6 hover:bg-orange hover:scale-110 transition-all duration-300 group">
                     <Icon className="w-10 h-10 text-white group-hover:text-navy-900" />
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-4">
+                  <h3 className="text-xl font-bold text-blue mb-4">
                     {value.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -201,33 +194,33 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="animate-slide-up">
-              <h2 className="text-4xl font-bold text-primary mb-8">Recognition & Awards</h2>
+              <h2 className="text-4xl font-bold text-blue mb-8">Recognition & Awards</h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <Award className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <Award className="w-6 h-6 text-orange mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">3PL Provider of the Year 2023</h3>
+                    <h3 className="font-semibold text-blue mb-1">3PL Provider of the Year 2023</h3>
                     <p className="text-muted-foreground">Supply Chain Excellence Awards</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <Award className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <Award className="w-6 h-6 text-orange mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Top Technology Innovation 2022</h3>
+                    <h3 className="font-semibold text-blue mb-1">Top Technology Innovation 2022</h3>
                     <p className="text-muted-foreground">Logistics Management Magazine</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <Award className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <Award className="w-6 h-6 text-orange mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Best Customer Service Excellence</h3>
+                    <h3 className="font-semibold text-blue mb-1">Best Customer Service Excellence</h3>
                     <p className="text-muted-foreground">National 3PL Association, 2021-2023</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <Award className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <Award className="w-6 h-6 text-orange mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-primary mb-1">Workplace Excellence Certification</h3>
+                    <h3 className="font-semibold text-blue mb-1">Workplace Excellence Certification</h3>
                     <p className="text-muted-foreground">Georgia Business Excellence Foundation</p>
                   </div>
                 </div>
@@ -235,7 +228,7 @@ const About = () => {
             </div>
             
             <div className="animate-slide-up">
-              <h2 className="text-4xl font-bold text-primary mb-8">Community Involvement</h2>
+              <h2 className="text-4xl font-bold text-blue mb-8">Community Involvement</h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
                   At ApexLink Logistics, we believe in giving back to the communities where we operate. 
@@ -243,22 +236,22 @@ const About = () => {
                   make a positive impact.
                 </p>
                 <div className="bg-card p-6 rounded-lg shadow-soft">
-                  <h3 className="text-xl font-semibold text-primary mb-4">Our Commitments</h3>
+                  <h3 className="text-xl font-semibold text-blue mb-4">Our Commitments</h3>
                   <ul className="space-y-3">
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
                       Annual food drive supporting local food banks
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
                       Scholarship program for logistics students
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
                       Volunteer hours for community development projects
                     </li>
                     <li className="flex items-center">
-                      <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
                       Environmental sustainability initiatives
                     </li>
                   </ul>
@@ -278,7 +271,7 @@ const About = () => {
           <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
             Experience the difference that two decades of excellence can make for your supply chain.
           </p>
-          <Link to="/">
+          <Link to="/services">
             <Button variant="cta" size="lg" className="text-lg px-8 py-4">
               Explore Our Services
             </Button>

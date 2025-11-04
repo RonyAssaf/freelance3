@@ -15,7 +15,7 @@ const Footer = () => {
             Get a free consultation and discover how ApexLink can transform your logistics operations.
           </p>
           <Link to="/contact">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-4">
+            <Button variant="cta" size="lg" className="text-lg px-8 py-4 bg-orange">
               Start Your Free Consultation
             </Button>
           </Link>
@@ -24,7 +24,7 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="text-center">
-            <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center mx-auto mb-4">
               <Phone className="w-6 h-6 text-navy-900" />
             </div>
             <h3 className="text-lg font-semibold mb-2">Call Us</h3>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
           
           <div className="text-center">
-            <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center mx-auto mb-4">
               <Mail className="w-6 h-6 text-navy-900" />
             </div>
             <h3 className="text-lg font-semibold mb-2">Email Us</h3>
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           
           <div className="text-center">
-            <div className="w-12 h-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center mx-auto mb-4">
               <MapPin className="w-6 h-6 text-navy-900" />
             </div>
             <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
@@ -72,8 +72,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 text-center">
           <div className="mb-4">
-            <h3 className="text-xl md:text-2xl font-bold text-transparent bg-gradient-accent bg-clip-text">
-              ApexLink Logistics
+            <h3 className="text-xl md:text-2xl font-bold text-transparent bg-orange bg-clip-text">
+              NEXTRIS
             </h3>
           </div>
           <p className="text-gray-400 text-xs sm:text-sm">
