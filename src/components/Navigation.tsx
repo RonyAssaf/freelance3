@@ -47,59 +47,60 @@ const Navigation = () => {
         </div>
       </div>
 
-      {/* ✅ Dim Background Overlay (left 50%) */}
+      {/* ✅ FULL-SCREEN Overlay (covers entire screen) */}
       {isMenuOpen && (
-        <div
-          onClick={toggleMenu}
-          className="fixed top-0 left-0 w-1/2 h-full bg-black/30 backdrop-blur-[1px] md:hidden transition-opacity duration-300 z-40"
-        />
+        <div className="fixed inset-0 z-40 md:hidden">
+          {/* 🔹 Dimmed background (click to close) */}
+          <div
+            onClick={toggleMenu}
+            className="absolute inset-0 bg-black/30 backdrop-blur-[1px] transition-opacity duration-300"
+          />
+
+          {/* 🔹 Sliding white menu (70% opacity, covers right 50%) */}
+          <div
+            className={`absolute top-0 right-0 h-full w-1/2 bg-white/70 backdrop-blur-sm shadow-lg transform transition-transform duration-300 ease-in-out ${
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            <div className="flex justify-end p-4">
+              <button onClick={toggleMenu} aria-label="Close menu">
+                <X className="w-8 h-8 text-blue" />
+              </button>
+            </div>
+
+            <div className="flex flex-col items-start space-y-6 px-8 mt-6">
+              <Link
+                to="/"
+                className="text-blue hover:text-accent text-xl font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="text-blue hover:text-accent text-xl font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                to="/services"
+                className="text-blue hover:text-accent text-xl font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link
+                to="/contact"
+                className="text-blue hover:text-accent text-xl font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+        </div>
       )}
-
-      {/* ✅ Right Sliding Menu (white 70% opacity, 50% width) */}
-      <div
-        className={`fixed top-0 right-0 h-full w-1/2 bg-white/70 backdrop-blur-sm shadow-lg transform transition-transform duration-300 ease-in-out md:hidden z-50 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        {/* Close button */}
-        <div className="flex justify-end p-4">
-          <button onClick={toggleMenu} aria-label="Close menu">
-            <X className="w-8 h-8 text-blue" />
-          </button>
-        </div>
-
-        {/* Navigation links */}
-        <div className="flex flex-col items-start space-y-6 px-8 mt-6">
-          <Link
-            to="/"
-            className="text-blue hover:text-accent text-xl font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="text-blue hover:text-accent text-xl font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            to="/services"
-            className="text-blue hover:text-accent text-xl font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Services
-          </Link>
-          <Link
-            to="/contact"
-            className="text-blue hover:text-accent text-xl font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Contact
-          </Link>
-        </div>
-      </div>
     </nav>
   );
 };
