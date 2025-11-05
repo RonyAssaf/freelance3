@@ -40,16 +40,14 @@ const Navigation = () => {
             </Link>
           </div>
 
-          {/* ✅ Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 text-blue hover:text-accent transition-colors"
+            className="md:hidden p-2 text-primary hover:text-accent transition-colors"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-      </div>
 
       {/* ✅ Mobile Navigation (slides in from the right) */}
       <div
