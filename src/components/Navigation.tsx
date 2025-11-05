@@ -13,19 +13,18 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft h-24">
       <div className="container mx-auto px-4 h-full">
         <div className="flex justify-between items-center h-full">
-          
-          {/* ✅ Logo takes 30% width and full height */}
-          <div className="w-[30%]  flex items-center">
+          {/* ✅ Logo (larger on mobile) */}
+          <div className="w-[30%] flex items-center">
             <Link to="/" className="h-full flex items-center">
               <img
                 src={logo}
                 alt="Logo"
-                className="h-full object-contain"
+                className="object-contain h-full md:h-full h-28" // 🔹 Bigger logo on mobile
               />
             </Link>
           </div>
 
-          {/* ✅ Navigation links (70%) */}
+          {/* ✅ Desktop Navigation (unchanged) */}
           <div className="hidden md:flex items-center justify-end space-x-20 w-[70%] h-full">
             <Link to="/" className="text-blue hover:text-accent transition-colors font-medium text-2xl">
               Home
@@ -50,42 +49,49 @@ const Navigation = () => {
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
+      </div>
 
-        {/* ✅ Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
-              <Link
-                to="/"
-                className="text-blue hover:text-accent transition-colors font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                to="/about"
-                className="text-blue hover:text-accent transition-colors font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                to="/services"
-                className="text-blue hover:text-accent transition-colors font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </Link>
-              <Link
-                to="/contact"
-                className="text-blue hover:text-accent transition-colors font-medium py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
-        )}
+      {/* ✅ Mobile Navigation (slides in from the right) */}
+      <div
+        className={`fixed top-0 right-0 h-full w-2/3 bg-white shadow-lg transform transition-transform duration-300 ease-in-out md:hidden ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-end p-4">
+          <button onClick={toggleMenu} aria-label="Close menu">
+            <X className="w-7 h-7 text-blue" />
+          </button>
+        </div>
+        <div className="flex flex-col items-start space-y-6 px-8 mt-6">
+          <Link
+            to="/"
+            className="text-blue hover:text-accent text-xl font-medium"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="text-blue hover:text-accent text-xl font-medium"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            to="/services"
+            className="text-blue hover:text-accent text-xl font-medium"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Services
+          </Link>
+          <Link
+            to="/contact"
+            className="text-blue hover:text-accent text-xl font-medium"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contact
+          </Link>
+        </div>
       </div>
     </nav>
   );
