@@ -47,51 +47,57 @@ const Navigation = () => {
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </div>
       </div>
-      {/* ✅ Mobile Navigation (slides in from the right) */}
-      <div
-        className={`fixed top-0 right-0 h-full w-2/3 bg-white shadow-lg transform transition-transform duration-300 ease-in-out md:hidden ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex justify-end p-4">
-          <button onClick={toggleMenu} aria-label="Close menu">
-            <X className="w-7 h-7 text-blue" />
+      {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="md:hidden p-2 text-primary hover:text-accent transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </div>
-        <div className="flex flex-col items-start space-y-6 px-8 mt-6">
-          <Link
-            to="/"
-            className="text-blue hover:text-accent text-xl font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="text-blue hover:text-accent text-xl font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            to="/services"
-            className="text-blue hover:text-accent text-xl font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Services
-          </Link>
-          <Link
-            to="/contact"
-            className="text-blue hover:text-accent text-xl font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Contact
-          </Link>
-        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border">
+            <div className="flex flex-col space-y-4">
+              <Link 
+                to="/" 
+                className="text-primary hover:text-accent transition-colors font-medium py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/about" 
+                className="text-primary hover:text-accent transition-colors font-medium py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link 
+                to="/services" 
+                className="text-primary hover:text-accent transition-colors font-medium py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link 
+                to="/contact" 
+                className="text-primary hover:text-accent transition-colors font-medium py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+           
+            </div>
+          </div>
+        )}
       </div>
+
     </nav>
+
+    
   );
 };
 
