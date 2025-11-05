@@ -11,17 +11,17 @@ const Navigation = () => {
   return (
     // ✅ Fixed height for navbar
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft h-24">
-      <div className="container mx-auto px-4 h-full">
+      <div className="container mx-auto px-4 h-20">
         <div className="flex justify-between items-center h-full">
           {/* ✅ Logo (larger on mobile) */}
           <div className="w-[30%] flex items-center">
-            <Link to="/" className="h-full flex items-center">
+           
               <img
                 src={logo}
                 alt="Logo"
                 className="object-contain h-full md:h-full h-28" // 🔹 Bigger logo on mobile
               />
-            </Link>
+            
           </div>
 
           {/* ✅ Desktop Navigation (unchanged) */}
@@ -48,7 +48,7 @@ const Navigation = () => {
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-
+      </div>
       {/* ✅ Mobile Navigation (slides in from the right) */}
       <div
         className={`fixed top-0 right-0 h-full w-2/3 bg-white shadow-lg transform transition-transform duration-300 ease-in-out md:hidden ${
