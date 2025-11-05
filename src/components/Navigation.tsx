@@ -72,12 +72,12 @@ const Navigation = () => {
           {/* 🔹 Dimmed background (click anywhere to close) */}
           <div
             onClick={toggleMenu}
-            className="absolute inset-0 bg-black/40 backdrop-blur-[2px] transition-opacity duration-300"
+            className="absolute inset-0 bg-black/20 backdrop-blur-[2px] transition-opacity duration-300"
           />
 
           {/* 🔹 Sliding white panel (70% opacity, covers right 50%) */}
           <div
-            className={`absolute top-0 right-0 h-full w-1/2 bg-white/70 backdrop-blur-sm shadow-lg transform transition-transform duration-300 ease-in-out ${
+            className={`absolute top-0 right-0 h-full w-1/2 bg-white/90 backdrop-blur-sm shadow-lg transform transition-transform duration-300 ease-in-out ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
