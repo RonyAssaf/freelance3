@@ -25,12 +25,12 @@ const Navigation = () => {
               <img
                 src={logo}
                 alt="Logo"
-                className="object-contain h-56  md:h-full "
+                className="object-contain h-56 md:h-full"
               />
             </div>
 
             {/* ✅ Desktop Navigation */}
-            <div className="hidden md:flex items-center justify-end space-x-20 w-[70%] h-full">
+            <div className="hidden md:flex items-center justify-end space-x-20 w-[70%] h-full pr-20">
               {navLinks.map((link, i) => (
                 <Link
                   key={i}
@@ -60,12 +60,14 @@ const Navigation = () => {
 
       {/* 🍎 Apple-style Mobile Menu */}
       <div
+        onClick={() => setIsMenuOpen(false)} // Close menu when clicking outside links
         className={`fixed inset-0 z-40 md:hidden bg-white/90 backdrop-blur-xl transition-all duration-500 ease-in-out ${
           isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
         {/* 🔹 Content container */}
         <div
+          onClick={(e) => e.stopPropagation()} // Prevent closing when clicking on the links container
           className={`flex flex-col justify-start items-center mt-28 space-y-8 transform transition-transform duration-500 ease-out ${
             isMenuOpen ? "translate-y-0" : "-translate-y-10"
           }`}
@@ -84,6 +86,8 @@ const Navigation = () => {
               {link.name}
             </Link>
           ))}
+          {/* Extra invisible div to detect taps below last link */}
+          <div className="h-32 w-full" />
         </div>
       </div>
     </>
@@ -91,3 +95,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+          
