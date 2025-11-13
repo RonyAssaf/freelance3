@@ -25,7 +25,7 @@ const Navigation = () => {
               <img
                 src={logo}
                 alt="Logo"
-                className="object-contain h-30 md:h-full "
+                className="object-contain h-56 w-56 md:h-full "
               />
             </div>
 
