@@ -173,7 +173,7 @@ const About = () => {
                   className="text-center animate-slide-up "
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-20 h-20 bg-blue rounded-full flex items-center justify-center mx-auto mb-6 hover:bg-orange hover:scale-110 transition-all duration-300 group">
+                  <div className="w-20 h-20 bg-blue rounded-full flex items-center justify-center mx-auto mb-6 hover:bg-orange hover:scale-150 transition-all duration-300 group">
                     <Icon className="w-10 h-10 text-white group-hover:text-navy-900" />
                   </div>
                   <h3 className="text-xl font-bold text-blue mb-4">
@@ -272,7 +272,7 @@ const About = () => {
             Experience the difference that two decades of excellence can make for your supply chain.
           </p>
           <Link to="/services">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-4">
+            <Button variant="cta" size="lg" className="text-lg px-8 py-4 bg-orange">
               Explore Our Services
             </Button>
           </Link>

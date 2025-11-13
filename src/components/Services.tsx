@@ -3,23 +3,18 @@ import { Truck, Warehouse, Package, BarChart3 } from "lucide-react";
 const services = [
   {
     icon: Warehouse,
-    title: "Warehousing & Distribution",
-    description: "State-of-the-art facilities with advanced inventory management and automated fulfillment systems."
+    title: "General Contracting",
+    description: "Nextris Service Solutions provides reliable general contracting across Texas with a focus on quality, efficiency, and trusted service."
   },
   {
     icon: Truck,
-    title: "Transportation Management",
-    description: "Comprehensive freight solutions with real-time tracking and optimized routing for maximum efficiency."
+    title: "Handyman",
+    description: "Nextris Service Solutions provides reliable handyman services across Texas, handling repairs, maintenance, and upgrades with efficient, quality workmanship."
   },
   {
     icon: Package,
-    title: "Order Fulfillment",
-    description: "End-to-end fulfillment services from pick and pack to same-day shipping and returns processing."
-  },
-  {
-    icon: BarChart3,
-    title: "Supply Chain Analytics",
-    description: "Data-driven insights and reporting to optimize performance, reduce costs, and improve decision-making."
+    title: "Plumbing",
+    description: "Nextris Service Solutions delivers reliable plumbing services across Texas, providing efficient repairs and maintenance to keep your systems running smoothly."
   }
 ];
 
@@ -29,15 +24,15 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue mb-6">
-            Comprehensive 3PL Services
+            Comprehensive  Services
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            From warehousing to last-mile delivery, we provide integrated logistics solutions
-            that scale with your business and exceed your expectations.
+            We’re dedicated to providing dependable, high-quality service that keeps your property running smoothly and your mind at ease.
+
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -46,7 +41,7 @@ const Services = () => {
                 className="bg-card p-8 rounded-lg shadow-soft hover:shadow-medium transition-all duration-300 group text-center animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-16 h-16 bg-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-150 transition-transform duration-300">
                   <Icon className="w-8 h-8 text-navy-900" />
                 </div>
                 <h3 className="text-xl font-semibold text-blue mb-4">

@@ -7,13 +7,20 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <>
       {/* ✅ Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft h-24">
         <div className="container mx-auto px-4 h-20">
           <div className="flex justify-between items-center h-full">
-            {/* ✅ Logo (larger on mobile) */}
+            {/* ✅ Logo */}
             <div className="w-[30%] flex items-center">
               <img
                 src={logo}
@@ -24,30 +31,15 @@ const Navigation = () => {
 
             {/* ✅ Desktop Navigation */}
             <div className="hidden md:flex items-center justify-end space-x-20 w-[70%] h-full">
-              <Link
-                to="/"
-                className="text-blue hover:text-accent transition-colors font-medium text-2xl"
-              >
-                Home
-              </Link>
-              <Link
-                to="/about"
-                className="text-blue hover:text-accent transition-colors font-medium text-2xl"
-              >
-                About
-              </Link>
-              <Link
-                to="/services"
-                className="text-blue hover:text-accent transition-colors font-medium text-2xl"
-              >
-                Services
-              </Link>
-              <Link
-                to="/contact"
-                className="text-blue hover:text-accent transition-colors font-medium text-2xl"
-              >
-                Contact
-              </Link>
+              {navLinks.map((link, i) => (
+                <Link
+                  key={i}
+                  to={link.path}
+                  className="text-blue hover:text-accent transition-colors font-medium text-2xl"
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
 
             {/* ✅ Mobile Menu Button */}
@@ -57,69 +49,43 @@ const Navigation = () => {
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-7 h-7 transition-transform duration-300 rotate-90" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-7 h-7 transition-transform duration-300" />
               )}
             </button>
           </div>
         </div>
       </nav>
 
-      {/* ✅ FULL PAGE Overlay (covers entire page and content) */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 z-40 md:hidden">
-          {/* 🔹 Dimmed background (click anywhere to close) */}
-          <div
-            onClick={toggleMenu}
-            className="absolute inset-0 bg-black/20 backdrop-blur-[2px] transition-opacity duration-300"
-          />
-
-          {/* 🔹 Sliding white panel (70% opacity, covers right 50%) */}
-          <div
-            className={`absolute top-0 right-0 h-full w-1/2 bg-white/90 backdrop-blur-sm shadow-lg transform transition-transform duration-300 ease-in-out ${
-              isMenuOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <div className="flex justify-end p-4">
-              <button onClick={toggleMenu} aria-label="Close menu">
-                <X className="w-8 h-8 text-blue" />
-              </button>
-            </div>
-
-            <div className="flex flex-col items-start space-y-6 px-8 mt-6">
-              <Link
-                to="/"
-                className="text-blue hover:text-accent text-xl font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                to="/about"
-                className="text-blue hover:text-accent text-xl font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                to="/services"
-                className="text-blue hover:text-accent text-xl font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </Link>
-              <Link
-                to="/contact"
-                className="text-blue hover:text-accent text-xl font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </Link>
-            </div>
-          </div>
+      {/* 🍎 Apple-style Mobile Menu */}
+      <div
+        className={`fixed inset-0 z-40 md:hidden bg-white/90 backdrop-blur-xl transition-all duration-500 ease-in-out ${
+          isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        {/* 🔹 Content container */}
+        <div
+          className={`flex flex-col justify-start items-center mt-28 space-y-8 transform transition-transform duration-500 ease-out ${
+            isMenuOpen ? "translate-y-0" : "-translate-y-10"
+          }`}
+        >
+          {navLinks.map((link, index) => (
+            <Link
+              key={index}
+              to={link.path}
+              onClick={() => setIsMenuOpen(false)}
+              className={`text-blue text-3xl font-semibold transition-all duration-300 ease-out hover:text-accent ${
+                isMenuOpen
+                  ? `opacity-100 translate-y-0 delay-[${index * 100}ms]`
+                  : "opacity-0 translate-y-5"
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
-      )}
+      </div>
     </>
   );
 };

@@ -5,74 +5,43 @@ import Navigation from "@/components/Navigation";
 
 const services = [
   {
-    icon: Hand,
-    title: "General Maintenance & Handyman",
-    description: "Our general maintenance and handyman services are built to support the day-to-day functionality, safety, and appearance of your facility. From small fixes to larger repair projects, we ensure every task is handled with precision and professionalism.",
+    icon: Warehouse,
+    title: "General Maintenance",
+    description: "TopNotch Service Solutions delivers reliable general contracting across Texas, handling everything from small repairs to full builds. We’re committed to quality, efficiency, and honest service you can count on.",
     features: [
-      "Interior & Exterior Painting",
-      "Drywall Installation, Repair & Patching",
-      "Carpentry Services (Repairs, Framing, Trim Work)",
-      "Door & Window Repairs",
-      "General Repairs & Touch-Ups"
+      "🏗️ Commercial & residential projects",
+      "🔧 Renovations, repairs, and construction",
+      "⏱️ Efficient, detail-driven work",
+      "💬 Responsive, trustworthy team"
+    ],
+    benefits: "Perfect Ideal for routine maintenance, preventative care, and general upkeep to keep your property running smoothly year-round."
+  },
+  {
+    icon: Hand,
+    title: "Handyman",
+    description: "Nextris Service Solutions offers dependable handyman services across Texas for both homes and businesses. From repairs and maintenance to installations and upgrades, we keep your property in great shape with efficient, high-quality work.",
+    features: [
+      "🛠️ Residential & commercial handyman services",
+      "🔧 Repairs, maintenance, and installations",
+      "⚡ Fast, reliable, and detail-focused service",
+      "🔍 Quality workmanship & lasting solutions",
+      "🤝 Local Texas team committed to trust and care"
     ],
     benefits: "Perfect for all-around repairs, installations, and upkeep to keep your property in top shape."
   },
   {
-    icon: Warehouse,
-    title: "Plumbing Services",
-    description: "Our comprehensive plumbing solutions are designed to keep your systems running smoothly, efficiently, and up to code. From routine maintenance to complex repairs, we cover it all:",
+    icon: Ship,
+    title: "Plumbing",
+    description: "Nextris Service Solutions provides trusted plumbing services across Texas for both homes and businesses. From quick repairs to full system maintenance, we deliver efficient, reliable solutions that keep your plumbing running right.",
     features: [
-      "Preventive Maintenance & System Inspections",
-      "Pipe, Fixture, Sink, Toilet, Urinal & Drain Installations & Repairs",
-      "Boiler & Water Heater Installations & Repairs",
-      "Drain & Duct Maintenance",
-      "Piping & Sewer System Management"
+      "🚰 Residential & commercial plumbing",
+      "🔧 Repairs, maintenance, and installations",
+      "⚡ Fast, reliable, and efficient service",
+      "🔍 Quality workmanship & practical solutions"
     ],
     benefits: "Perfect for resolving leaks, blockages, and all plumbing-related issues efficiently and professionally."
-  },
-  {
-    icon: Ship,
-    title: "Renovation Services",
-    description: "We offer full-service renovation solutions tailored to modernize and upgrade your facilities, improving functionality, compliance, and visual appeal. Whether it’s a single-room refresh or a full-scale build-out, we deliver quality, efficiency, and minimal disruption:",
-    features: [
-      "Interior & Exterior Renovations",
-      "Office, Retail, and Commercial Buildouts",
-      "Flooring, Walls, & Ceiling Upgrades",
-      "Fixture & Finish Installations",
-      "Project Management & Coordination",
-      "Custom Carpentry & Millwork"
-    ],
-    benefits: "Perfect for revitalizing your home or workspace with modern designs and quality craftsmanship."
-  },
-  {
-    icon: BellElectric,
-    title: "Electrical Services",
-    description: "Our electrical services are built to ensure safety, efficiency, and uninterrupted operations. Whether it’s routine upkeep or urgent repairs, we provide complete solutions tailored to your facility’s needs:",
-    features: [
-      "Generator Installations & Maintenance",
-      "Surge Protection & Grounding Solutions",
-      "Electrical Troubleshooting & Diagnostics",
-      "Preventive Maintenance & System Inspections",
-      "Interior & Exterior Lighting Installations & Repairs",
-      "Panel Upgrades, Circuit Breaker Replacements & Fuse Services"
-
-    ],
-    benefits: "Ideal for installations, repairs, and maintenance to ensure safe and efficient electrical systems."
-  },
-  {
-    icon: MapPin,
-    title: "HVAC/R Services",
-    description: "Our HVAC/R solutions are designed to maintain optimal climate control, energy efficiency, and system reliability across your facility. From preventive care to emergency repairs, we ensure your heating, cooling, and refrigeration systems perform at their best:",
-    features: [
-      "HVAC Installations & Replacements",
-      "Refrigeration System Maintenance & Repairs",
-      "Duct Cleaning, Sealing & Balancing",
-      "Refrigerant Leak Detection & Charging",
-      "International shipping documentation",
-      "Heating & Cooling Repairs (Furnaces, Heat Pumps, AC Units)",
-    ],
-    benefits: "Delivering high-quality renovations to refresh, modernize, and elevate any space."
   }
+  
 ];
 
 const Services = () => {
@@ -109,7 +78,7 @@ const Services = () => {
                 >
                   <div className={`animate-slide-up ${!isEven ? 'lg:order-2' : ''}`}>
                     <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mr-4">
+                      <div className="w-16 h-16 bg-orange rounded-full flex items-center justify-center mr-4">
                         <Icon className="w-8 h-8 text-navy-900" />
                       </div>
                       <h2 className="text-3xl md:text-4xl font-bold text-blue">
@@ -137,7 +106,7 @@ const Services = () => {
                   
                   <div className={`animate-slide-up ${!isEven ? 'lg:order-1' : ''}`}>
                     <div className="bg-secondary p-8 rounded-lg shadow-soft hover:shadow-medium transition-all duration-300">
-                      <div className="w-32 h-32 bg-gradient-accent rounded-full mx-auto mb-6 flex items-center justify-center">
+                      <div className="w-32 h-32 bg-orange rounded-full mx-auto mb-6 flex items-center justify-center">
                         <Icon className="w-16 h-16 text-navy-900" />
                       </div>
                       <div className="text-center">
@@ -179,7 +148,7 @@ const Services = () => {
               </Button>
             </Link>
             <Link to="/about">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4">
+              <Button variant="cta" size="lg" className="text-lg px-8 py-4 bg-orange">
                 Learn More About Us
               </Button>
             </Link>
