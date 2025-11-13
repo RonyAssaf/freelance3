@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -34,12 +33,37 @@ const Contact = () => {
     }, 3000);
   };
 
-  return (
-     
-      <div className="min-h-screen bg-background pt-20">
-      {/* Shared Navigation (same as Home) */}
-      <Navigation />
+  const contactItems = [
+    {
+      icon: Phone,
+      title: "Phone",
+      details: ["1-800-APEX-LOG (1-800-273-9564)", "Direct: (865) 555-0123"]
+    },
+    {
+      icon: Mail,
+      title: "Email",
+      details: ["info@apexlinklogistics.com", "sales@apexlinklogistics.com"]
+    },
+    {
+      icon: MapPin,
+      title: "Address",
+      details: ["1250 Commerce Drive", "Knoxville, TN 37919", "United States"]
+    },
+    {
+      icon: Clock,
+      title: "Business Hours",
+      details: [
+        "Monday - Friday: 7:00 AM - 7:00 PM EST",
+        "Saturday: 8:00 AM - 4:00 PM EST",
+        "Sunday: Emergency services only"
+      ]
+    }
+  ];
 
+  return (
+    <div className="min-h-screen bg-background pt-20">
+      {/* Shared Navigation */}
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-primary text-white">
@@ -66,57 +90,28 @@ const Contact = () => {
                 Our team of logistics professionals is ready to help you streamline your supply chain 
                 operations. Contact us today for a free consultation and custom quote.
               </p>
-              
+
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-navy-900" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-blue mb-2">Phone</h3>
-                    <p className="text-muted-foreground">1-800-APEX-LOG (1-800-273-9564)</p>
-                    <p className="text-muted-foreground">Direct: (865) 555-0123</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-navy-900" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-blue mb-2">Email</h3>
-                    <p className="text-muted-foreground">info@apexlinklogistics.com</p>
-                    <p className="text-muted-foreground">sales@apexlinklogistics.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-navy-900" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-blue mb-2">Address</h3>
-                    <p className="text-muted-foreground">
-                      1250 Commerce Drive<br />
-                      Knoxville, TN 37919<br />
-                      United States
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center  group-hover:scale-150 transition-transform duration-300">
-                    <Clock className="w-6 h-6 text-navy-900" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-blue mb-2">Business Hours</h3>
-                    <p className="text-muted-foreground">
-                      Monday - Friday: 7:00 AM - 7:00 PM EST<br />
-                      Saturday: 8:00 AM - 4:00 PM EST<br />
-                      Sunday: Emergency services only
-                    </p>
-                  </div>
-                </div>
+                {contactItems.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <div
+                      key={index}
+                      className="flex items-start space-x-4 group animate-slide-up"
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-125">
+                        <Icon className="w-6 h-6 text-navy-900" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold text-blue mb-2">{item.title}</h3>
+                        {item.details.map((detail, i) => (
+                          <p key={i} className="text-muted-foreground">{detail}</p>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
@@ -130,7 +125,7 @@ const Contact = () => {
                   Fill out the form below and our team will get back to you within 24 hours 
                   with a customized logistics solution.
                 </p>
-                
+
                 {showSuccess && (
                   <div className="bg-green-50 border border-green-200 p-4 rounded-lg mb-6">
                     <p className="text-green-800 font-medium">
@@ -138,7 +133,7 @@ const Contact = () => {
                     </p>
                   </div>
                 )}
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
@@ -172,7 +167,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-blue mb-2">
                       Email Address *
@@ -188,7 +183,7 @@ const Contact = () => {
                       placeholder="your.email@company.com"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-blue mb-2">
                       Message *
@@ -203,7 +198,7 @@ const Contact = () => {
                       placeholder="Tell us about your logistics needs, shipment volumes, destinations, or any specific requirements..."
                     />
                   </div>
-                  
+
                   <Button 
                     type="submit" 
                     variant="cta" 
@@ -214,7 +209,7 @@ const Contact = () => {
                     {showSuccess ? "Message Sent!" : "Send Message"}
                   </Button>
                 </form>
-                
+
                 <p className="text-sm text-muted-foreground mt-4 text-center">
                   * Required fields. We respect your privacy and will never share your information.
                 </p>
@@ -242,7 +237,6 @@ const Contact = () => {
             >
               <a href="tel:18002739564">Call Now: 1-800-APEX-LOG</a>
             </Button>
-           
           </div>
         </div>
       </section>
