@@ -1,22 +1,18 @@
-import { Star } from "lucide-react";
 import generalMaintenance from "@/assets/GeneralMaintenance.png";
 import generalMaintenance1 from "@/assets/GeneralMaintenance1.png";
 import generalMaintenance2 from "@/assets/GeneralMaintenance2.png";
-import handy from "@/assets/handy.png";
 import handy1 from "@/assets/handy1.png";
 import plumbing from "@/assets/plumbing.png";
 import plumbing1 from "@/assets/plumbing1.png";
 import plumbing2 from "@/assets/plumbing2.png";
 
-
 const photos = [
- generalMaintenance,
+  generalMaintenance,
   generalMaintenance1,
   generalMaintenance2,
-  handy,
   handy1,
   plumbing,
- plumbing1,
+  plumbing1,
   plumbing2,
 ];
 
@@ -29,17 +25,16 @@ const Testimonials = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue mb-6">
             What Our Clients Say
           </h2>
-        
         </div>
 
-        {/* Moving Photo Row */}
+        {/* Infinite Loop Slider */}
         <div className="relative w-full overflow-hidden">
-          {/* Double the list of photos for seamless loop */}
-          <div className="flex animate-scroll-x gap-8">
-            {[...photos, ...photos].map((photo, index) => (
+          <div className="flex gap-7 animate-scroll-x md:animate-scroll-x-desktop">
+            {/* Duplicate the photos 10 times for 10 full loops */}
+            {Array.from({ length: 10 }).flatMap(() => photos).map((photo, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-64 h-64 rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-transform duration-300 hover:scale-105"
+                className="w-64 h-64 flex-shrink-0 rounded-lg overflow-hidden shadow-soft hover:shadow-medium transition-transform duration-300 hover:scale-105"
               >
                 <img
                   src={photo}

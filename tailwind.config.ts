@@ -106,11 +106,9 @@ export default {
           "0%": { opacity: "0", transform: "translateY(30px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
-
-        /* 🆕 Smooth left-to-right scroll animation */
         "scroll-x": {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       animation: {
@@ -118,9 +116,8 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out",
         "slide-up": "slide-up 0.8s ease-out",
-
-        /* 🆕 Continuous photo scroll */
-        "scroll-x": "scroll-x 20s linear infinite",
+        "scroll-x": "scroll-x 8s linear infinite", 
+        "scroll-x-desktop": "scroll-x 20s linear infinite", 
       },
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",
