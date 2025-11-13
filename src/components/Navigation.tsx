@@ -21,11 +21,11 @@ const Navigation = () => {
         <div className="container mx-auto px-4 h-20">
           <div className="flex justify-between items-center h-full">
             {/* ✅ Logo */}
-            <div className="w-[30%] flex items-center">
+            <div className="md:w-[30%] w-1/2 flex items-center">
               <img
                 src={logo}
                 alt="Logo"
-                className="object-contain h-94 md:h-full"
+                className="object-contain h-32 md:h-full"
               />
             </div>
 
