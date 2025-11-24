@@ -3,7 +3,7 @@ import { Truck, Warehouse, Package, BarChart3 } from "lucide-react";
 const services = [
   {
     icon: Warehouse,
-    title: "General Contracting",
+    title: "HVAC",
     description: "Nextris Service Solutions provides reliable general contracting across Texas with a focus on quality, efficiency, and trusted service."
   },
   {
