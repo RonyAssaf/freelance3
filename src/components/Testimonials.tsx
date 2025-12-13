@@ -71,8 +71,9 @@ const Testimonials = () => {
         {/* Section Heading */}
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue mb-6">
-            What Our Clients Say
+            Calls You’ve Made
           </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">From small fixes to full projects, our work reflects the standards our customers trust.</p>
         </div>
 
         {/* Slider Wrapper (hidden overflow) */}
