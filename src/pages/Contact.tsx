@@ -203,7 +203,7 @@ const Contact = () => {
                     type="submit" 
                     variant="cta" 
                     size="lg" 
-                    className="w-full text-lg py-4 bg-orange"
+                    className="w-full text-lg   text-white hover:bg-white hover:text-blue bg-orange"
                     disabled={showSuccess}
                   >
                     {showSuccess ? "Message Sent!" : "Send Message"}
@@ -226,13 +226,13 @@ const Contact = () => {
             Need Immediate Assistance?
           </h2>
           <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
-            We’re here to assist you with all your facility management, exterior services, and construction needs.
+            We’re here to support all your general maintenance and handyman needs, from routine repairs to complete property care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               variant="cta" 
               size="lg" 
-              className="text-lg px-8 py-4 bg-orange"
+              className="text-lg   text-white hover:bg-white hover:text-blue bg-orange"
               asChild
             >
               <a href="tel:18002739564">Call Now: 1-800-APEX-LOG</a>

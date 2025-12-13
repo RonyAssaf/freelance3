@@ -30,17 +30,12 @@ const About = () => {
               <h2 className="text-4xl font-bold text-blue mb-6">Our Story</h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 2003, ApexLink Logistics began as a vision to revolutionize supply chain 
-                  management through technology-driven solutions and unwavering commitment to client success. 
-                  What started as a small team in Atlanta has grown into a premier 3PL provider serving 
-                  companies across North America.
+                  We are confident that our deep industry expertise and dedicated service team enable us to achieve our objectives, uphold our commitments, and advance our vision. Guided by core principles that
+                   shape our decisions and fuel our progress, we place strong emphasis on clear, timely, and transparent communication.
+                   Through exclusive technology and a centralized control center, we streamline interactions and enhance efficiency.
+By maintaining continuous, direct communication with our clients and team managers, we deliver real-time project monitoring and ensure access to accurate, up-to-date information whenever it is needed.
                 </p>
-                <p>
-                  Over the past two decades, we've continuously evolved our services, invested in 
-                  cutting-edge technology, and expanded our footprint to meet the changing needs of modern 
-                  commerce. Today, we operate multiple state-of-the-art facilities and serve over 500 
-                  active clients across diverse industries.
-                </p>
+
                 <p>
                   Our growth has been fueled by a simple philosophy: when our clients succeed, we succeed. 
                   This partnership mindset has earned us industry recognition and, more importantly, 
@@ -59,8 +54,7 @@ const About = () => {
                 <div className="border-t pt-6">
                   <h4 className="text-xl font-semibold text-blue mb-4">Our Vision</h4>
                   <p className="text-muted-foreground">
-                    To be the most trusted logistics partner, known for innovation, reliability, 
-                    and exceptional service that transforms how businesses manage their supply chains.
+                    To be the go-to handyman service, known for reliability, quality craftsmanship, and smart solutions that make property maintenance easy and stress-free.
                   </p>
                 </div>
               </div>
@@ -69,74 +63,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* Leadership Team */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-4xl md:text-5xl font-bold text-blue mb-6">
-              Leadership Team
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Meet the experienced professionals driving innovation and excellence at ApexLink Logistics
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Sarah Thompson",
-                role: "Chief Executive Officer",
-                bio: "With over 25 years in logistics and supply chain management, Sarah founded ApexLink with a vision to transform how businesses approach their logistics needs. Her leadership has guided the company through consistent growth and industry recognition.",
-                experience: "Former VP of Operations at Global Logistics Solutions"
-              },
-              {
-                name: "Michael Rodriguez",
-                role: "Chief Technology Officer",
-                bio: "Michael leads our technology initiatives, ensuring ApexLink stays at the forefront of logistics innovation. His expertise in automation and data analytics has been instrumental in developing our proprietary management systems.",
-                experience: "Former Senior Director at TechFlow Innovations"
-              },
-              {
-                name: "Jennifer Walsh",
-                role: "Chief Operations Officer",
-                bio: "Jennifer oversees our day-to-day operations across all facilities, ensuring consistent service quality and operational excellence. Her attention to detail and process optimization expertise drives our 99.9% accuracy rate.",
-                experience: "Former Operations Manager at Precision Logistics"
-              }
-            ].map((leader, index) => (
-              <div 
-                key={index}
-                className="bg-card p-8 rounded-lg shadow-soft hover:shadow-medium transition-all duration-300 animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-32 h-32 bg-orange rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Users className="w-16 h-16 text-blue" />
-                  <span className="sr-only">High-quality, professional headshot of {leader.name}</span>
-                </div>
-                <h3 className="text-xl font-bold text-blue text-center mb-2">
-                  {leader.name}
-                </h3>
-                <p className="text-orange font-semibold text-center mb-4">
-                  {leader.role}
-                </p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {leader.bio}
-                </p>
-                <div className="border-t pt-4">
-                  <p className="text-sm text-muted-foreground italic">
-                    {leader.experience}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Culture & Values */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-slide-up">
             <h2 className="text-4xl md:text-5xl font-bold text-blue mb-6">
-              Our Culture & Values
+              Our Team Values
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               The principles that guide our decisions, shape our relationships, and drive our success
@@ -147,23 +81,23 @@ const About = () => {
             {[
               {
                 icon: Award,
-                title: "Excellence",
-                description: "We pursue the highest standards in everything we do, from technology implementation to customer service delivery."
+                title: "Ownership & Accountability",
+                description: "We take initiative and approach every task with a strong sense of responsibility. By remaining flexible and adapting to change, we ensure challenges are met with proactive solutions and dependable follow-through."
               },
               {
                 icon: Users,
-                title: "Partnership",
-                description: "We build lasting relationships based on trust, transparency, and mutual success with clients and team members alike."
+                title: "Customer Excellence",
+                description: "Exceptional service is at the heart of everything we do. We focus on clear communication, efficient processes, and thoughtful execution to deliver seamless and satisfying experiences for every customer."
               },
               {
                 icon: Heart,
-                title: "Integrity",
-                description: "We operate with honesty and ethical practices in all our business dealings, ensuring accountability at every level."
+                title: "Integrity & Authenticity",
+                description: "We believe trust is built through honesty and transparency. By communicating with integrity, avoiding gossip, and staying true to our values, we foster respectful relationships and long-term confidence."
               },
               {
                 icon: Globe,
-                title: "Innovation",
-                description: "We continuously invest in new technologies and processes to stay ahead of industry trends and client needs."
+                title: "Growth, Care & Teamwork",
+                description: "We are committed to continuous learning and improvement while caring deeply for our people, clients, and communities. By working together toward shared goals, we create a supportive environment where everyone can succeed."
               }
             ].map((value, index) => {
               const Icon = value.icon;
@@ -189,90 +123,19 @@ const About = () => {
         </div>
       </section>
 
-      {/* Accolades & Community */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div className="animate-slide-up">
-              <h2 className="text-4xl font-bold text-blue mb-8">Recognition & Awards</h2>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <Award className="w-6 h-6 text-orange mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-blue mb-1">3PL Provider of the Year 2023</h3>
-                    <p className="text-muted-foreground">Supply Chain Excellence Awards</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <Award className="w-6 h-6 text-orange mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-blue mb-1">Top Technology Innovation 2022</h3>
-                    <p className="text-muted-foreground">Logistics Management Magazine</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <Award className="w-6 h-6 text-orange mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-blue mb-1">Best Customer Service Excellence</h3>
-                    <p className="text-muted-foreground">National 3PL Association, 2021-2023</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <Award className="w-6 h-6 text-orange mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-blue mb-1">Workplace Excellence Certification</h3>
-                    <p className="text-muted-foreground">Georgia Business Excellence Foundation</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="animate-slide-up">
-              <h2 className="text-4xl font-bold text-blue mb-8">Community Involvement</h2>
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p>
-                  At ApexLink Logistics, we believe in giving back to the communities where we operate. 
-                  Our team actively participates in local initiatives and supports organizations that 
-                  make a positive impact.
-                </p>
-                <div className="bg-card p-6 rounded-lg shadow-soft">
-                  <h3 className="text-xl font-semibold text-blue mb-4">Our Commitments</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
-                      Annual food drive supporting local food banks
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
-                      Scholarship program for logistics students
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
-                      Volunteer hours for community development projects
-                    </li>
-                    <li className="flex items-center">
-                      <div className="w-2 h-2 bg-orange rounded-full mr-3"></div>
-                      Environmental sustainability initiatives
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
-            Ready to Partner with ApexLink?
+            Ready to Partner with Nextris?
           </h2>
           <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
-            Experience the difference that two decades of excellence can make for your supply chain.
+            Experience the difference that years of proven excellence make in reliable, professional general maintenance.
           </p>
           <Link to="/services">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-4 bg-orange">
+            <Button variant="cta" size="lg" className="text-lg   text-white hover:bg-white hover:text-blue bg-orange">
               Explore Our Services
             </Button>
           </Link>

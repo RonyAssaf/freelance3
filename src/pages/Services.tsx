@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 
 const services = [
   {
-    icon: Warehouse,
+    icon: Hand,
     title: "General Maintenance",
     description: "TopNotch Service Solutions delivers reliable general contracting across Texas, handling everything from small repairs to full builds. We’re committed to quality, efficiency, and honest service you can count on.",
     features: [
@@ -16,19 +16,7 @@ const services = [
     ],
     benefits: "Perfect Ideal for routine maintenance, preventative care, and general upkeep to keep your property running smoothly year-round."
   },
-  {
-    icon: Hand,
-    title: "Handyman",
-    description: "Nextris Service Solutions offers dependable handyman services across Texas for both homes and businesses. From repairs and maintenance to installations and upgrades, we keep your property in great shape with efficient, high-quality work.",
-    features: [
-      "🛠️ Residential & commercial handyman services",
-      "🔧 Repairs, maintenance, and installations",
-      "⚡ Fast, reliable, and detail-focused service",
-      "🔍 Quality workmanship & lasting solutions",
-      "🤝 Local Texas team committed to trust and care"
-    ],
-    benefits: "Perfect for all-around repairs, installations, and upkeep to keep your property in top shape."
-  },
+ 
   {
     icon: Ship,
     title: "Plumbing",
@@ -117,7 +105,7 @@ const Services = () => {
                           Contact our team to discuss how {service.title.toLowerCase()} can optimize your supply chain.
                         </p>
                         <Link to="/contact">
-                          <Button variant="cta" size="lg" className="bg-orange">
+                          <Button variant="cta" size="lg" className="text-lg   text-white hover:bg-white hover:text-blue bg-orange">
                             Request Quote
                           </Button>
                         </Link>
@@ -138,17 +126,17 @@ const Services = () => {
             Need a Custom Solution?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Our logistics experts can design a tailored solution that combines multiple services 
+            Our professional experts can design a tailored solution that combines multiple services 
             to meet your specific requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button variant="cta" size="lg" className="text-lg px-8 py-4 bg-orange">
+              <Button variant="cta" size="lg" className="text-lg   text-white hover:bg-white hover:text-blue bg-orange">
                 Contact Our Experts
               </Button>
             </Link>
             <Link to="/about">
-              <Button variant="cta" size="lg" className="text-lg px-8 py-4 bg-orange">
+              <Button variant="cta" size="lg" className="text-lg   text-white hover:bg-white hover:text-blue bg-orange">
                 Learn More About Us
               </Button>
             </Link>
