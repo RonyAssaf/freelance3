@@ -8,7 +8,7 @@ const ACMaintenance = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">AC & Heating Maintenance</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Keep your heating and cooling systems running efficiently with Nextris’ comprehensive, cost-effective maintenance services. Regular tune-ups help your system operate reliably and save you money on energy bills.
+          Keep your heating and cooling systems running efficiently with Proluma’ comprehensive, cost-effective maintenance services. Regular tune-ups help your system operate reliably and save you money on energy bills.
         </p>
         <a
           href="tel:3139003211"
@@ -22,7 +22,7 @@ const ACMaintenance = () => {
       <section className="py-16 px-6 md:px-20 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">What Happens During a Tune-Up?</h2>
         <p className="text-gray-700 mb-6">
-          During our annual AC or heating tune-up, Nextris technicians will thoroughly inspect, clean, adjust, and calibrate all key components. This ensures your system operates efficiently and safely. Key tasks include:
+          During our annual AC or heating tune-up, Proluma technicians will thoroughly inspect, clean, adjust, and calibrate all key components. This ensures your system operates efficiently and safely. Key tasks include:
         </p>
         <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
           <li>Cleaning outdoor equipment (if needed)</li>
@@ -36,7 +36,7 @@ const ACMaintenance = () => {
 
         <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">Do I Need Maintenance?</h2>
         <p className="text-gray-700 mb-6">
-          Just like you wouldn’t drive a car for years without an oil change, your heating or cooling system needs regular professional maintenance. Routine tune-ups with Nextris provide many benefits:
+          Just like you wouldn’t drive a car for years without an oil change, your heating or cooling system needs regular professional maintenance. Routine tune-ups with Proluma provide many benefits:
         </p>
         <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
           <li>Identify small issues before they become costly problems</li>
@@ -46,7 +46,7 @@ const ACMaintenance = () => {
           <li>Maintain warranty validity if professional maintenance is required</li>
         </ul>
 
-        <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">The Nextris Plan: Money-Saving Maintenance Program</h2>
+        <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">The Proluma Plan: Money-Saving Maintenance Program</h2>
         <p className="text-gray-700 mb-6">
           Our maintenance plan keeps your HVAC system at its best, offering exclusive benefits:
         </p>
@@ -58,7 +58,7 @@ const ACMaintenance = () => {
           <li>Same-day service</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          To join our Nextris Plan or schedule preventive maintenance, call us at (313) 900-3211 or contact us online today!
+          To join our Proluma Plan or schedule preventive maintenance, call us at (313) 900-3211 or contact us online today!
         </p>
       </section>
 

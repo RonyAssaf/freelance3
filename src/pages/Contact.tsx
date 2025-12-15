@@ -37,7 +37,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["1-800-APEX-LOG (1-800-273-9564)", "Direct: (865) 555-0123"]
+      details: ["+1 (561) 933 9296",]
     },
     {
       icon: Mail,
@@ -47,15 +47,13 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      details: ["1250 Commerce Drive", "Knoxville, TN 37919", "United States"]
+      details: ["250 congress park dr, ap 320, delray beach, florida 33445"]
     },
     {
       icon: Clock,
       title: "Business Hours",
       details: [
-        "Monday - Friday: 7:00 AM - 7:00 PM EST",
-        "Saturday: 8:00 AM - 4:00 PM EST",
-        "Sunday: Emergency services only"
+        "Monday - Friday: 9:00 AM - 7:00 PM ",
       ]
     }
   ];
@@ -235,7 +233,7 @@ const Contact = () => {
               className="text-lg   text-white hover:bg-white hover:text-blue bg-orange"
               asChild
             >
-              <a href="tel:18002739564">Call Now: 1-800-APEX-LOG</a>
+              <a href="tel:18002739564">Call Now: +1 (561) 933 9296</a>
             </Button>
           </div>
         </div>

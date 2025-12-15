@@ -74,7 +74,7 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         orange: {
-          DEFAULT: "#eb7124",
+          DEFAULT: "#80cd29",
           500: "#eb7124",
           600: "#cf5a1a",
         },

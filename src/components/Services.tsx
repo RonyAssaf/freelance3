@@ -4,17 +4,17 @@ const services = [
   {
     icon: Warehouse,
     title: "HVAC",
-    description: "Nextris Service Solutions provides reliable general contracting across Texas with a focus on quality, efficiency, and trusted service."
+    description: "Proluma Service Solutions provides reliable general contracting across Texas with a focus on quality, efficiency, and trusted service."
   },
   {
     icon: Truck,
     title: "Handyman",
-    description: "Nextris Service Solutions provides reliable handyman services across Texas, handling repairs, maintenance, and upgrades with efficient, quality workmanship."
+    description: "Proluma Service Solutions provides reliable handyman services across Texas, handling repairs, maintenance, and upgrades with efficient, quality workmanship."
   },
   {
     icon: Package,
     title: "Plumbing",
-    description: "Nextris Service Solutions delivers reliable plumbing services across Texas, providing efficient repairs and maintenance to keep your systems running smoothly."
+    description: "Proluma Service Solutions delivers reliable plumbing services across Texas, providing efficient repairs and maintenance to keep your systems running smoothly."
   }
 ];
 

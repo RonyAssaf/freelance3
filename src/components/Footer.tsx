@@ -34,8 +34,7 @@ const Footer = () => {
                 <Phone className="w-6 h-6 text-navy-900" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-              <p className="text-gray-300 text-sm sm:text-base">1-800-APEX-LOG</p>
-              <p className="text-gray-300 text-sm sm:text-base">(1-800-273-9564)</p>
+              <p className="text-gray-300 text-sm sm:text-base">+1 (561) 933 9296</p>
             </div>
 
             {/* Email */}
@@ -57,10 +56,10 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-2">Visit Us</h3>
 
               <p className="text-gray-300 text-sm sm:text-base">
-                1250 Commerce Drive
+                250 congress park dr, ap 320
               </p>
               <p className="text-gray-300 text-sm sm:text-base mb-2">
-                Atlanta, GA 30309
+               delray beach, florida 33445
               </p>
 
               <button
@@ -94,7 +93,7 @@ const Footer = () => {
           <div className="border-t border-gray-700 pt-8 text-center">
             <div className="mb-4">
               <h3 className="text-xl md:text-2xl font-bold text-transparent bg-orange bg-clip-text">
-                NEXTRIS
+                Proluma
               </h3>
             </div>
             <p className="text-gray-400 text-xs sm:text-sm">

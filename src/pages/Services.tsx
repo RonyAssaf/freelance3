@@ -20,7 +20,7 @@ const services = [
   {
     icon: Ship,
     title: "Plumbing",
-    description: "Nextris Service Solutions provides trusted plumbing services across Texas for both homes and businesses. From quick repairs to full system maintenance, we deliver efficient, reliable solutions that keep your plumbing running right.",
+    description: "Proluma Service Solutions provides trusted plumbing services across Texas for both homes and businesses. From quick repairs to full system maintenance, we deliver efficient, reliable solutions that keep your plumbing running right.",
     features: [
       "🚰 Residential & commercial plumbing",
       "🔧 Repairs, maintenance, and installations",

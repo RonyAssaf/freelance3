@@ -8,7 +8,7 @@ const ThermostatService = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Thermostat Services</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Your thermostat is the brain of your HVAC system. Upgrade to a programmable or Wi-Fi thermostat with Nextris for enhanced comfort, convenience, and energy efficiency.
+          Your thermostat is the brain of your HVAC system. Upgrade to a programmable or Wi-Fi thermostat with Proluma for enhanced comfort, convenience, and energy efficiency.
         </p>
         <a
           href="tel:3139003211"
@@ -41,11 +41,11 @@ const ThermostatService = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          Nextris installs a wide range of smart thermostats and also provides HVAC and electrical services, from maintenance to rewiring. That’s why homeowners trust us as a top-rated local HVAC and electrical company.
+          Proluma installs a wide range of smart thermostats and also provides HVAC and electrical services, from maintenance to rewiring. That’s why homeowners trust us as a top-rated local HVAC and electrical company.
         </p>
 
         <p className="text-gray-700 mb-6">
-          Ready to upgrade to a smart thermostat? Call Nextris today at (313) 900-3211 or contact us online to schedule your thermostat installation!
+          Ready to upgrade to a smart thermostat? Call Proluma today at (313) 900-3211 or contact us online to schedule your thermostat installation!
         </p>
       </section>
 

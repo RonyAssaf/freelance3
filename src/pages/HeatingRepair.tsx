@@ -9,7 +9,7 @@ const HeatingRepair = () => {
 
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Heating Repair Services You Can Trust</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Even in colder months, Nextris ensures your home stays warm and comfortable. Our expert team provides fast, reliable heating system repair services.
+          Even in colder months, Proluma ensures your home stays warm and comfortable. Our expert team provides fast, reliable heating system repair services.
         </p>
         <a
           href="tel:3139003211"
@@ -37,7 +37,7 @@ const HeatingRepair = () => {
             <strong>Short Cycling:</strong> Heater switches on/off frequently, indicating overheating or thermostat issues.
           </li>
           <li>
-            <strong>Unusual Noises:</strong> Sounds from your system can indicate loose parts or wear. Turn off and call Nextris.
+            <strong>Unusual Noises:</strong> Sounds from your system can indicate loose parts or wear. Turn off and call Proluma.
           </li>
           <li>
             <strong>Rising Heating Bills:</strong> A sudden spike in costs can mean your system needs servicing or repairs.
@@ -45,13 +45,13 @@ const HeatingRepair = () => {
         </ul>
 
         <p className="mt-6 text-gray-700">
-          If you notice any of these signs, call (313) 900-3211 or contact Nextris online for expert heating repair. We’re available 24/7.
+          If you notice any of these signs, call (313) 900-3211 or contact Proluma online for expert heating repair. We’re available 24/7.
         </p>
 
-        {/* Why Choose Nextris Section */}
-        <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">Why Choose Nextris for Heating Repair?</h2>
+        {/* Why Choose Proluma Section */}
+        <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">Why Choose Proluma for Heating Repair?</h2>
         <p className="text-gray-700 mb-6">
-          Nextris services a wide range of heating equipment, including furnaces and heat pumps from leading manufacturers. Our skilled technicians quickly diagnose problems and deliver prompt, cost-effective repairs.
+          Proluma services a wide range of heating equipment, including furnaces and heat pumps from leading manufacturers. Our skilled technicians quickly diagnose problems and deliver prompt, cost-effective repairs.
         </p>
         <p className="text-gray-700 mb-6">
           Upfront pricing, clear explanations, waived diagnostic fees if you proceed, and guidance on replacement options if needed.

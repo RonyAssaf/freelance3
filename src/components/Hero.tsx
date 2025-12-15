@@ -23,15 +23,14 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Welcome To
-            <span className="text-transparent bg-orange bg-clip-text"> Nextris</span>
+            <span className="text-transparent bg-orange bg-clip-text"> Proluma</span>
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
-           We aim to keep your property well-maintained and stress-free with dependable service, expert care, and a local team you can trust.
+           Expert HVAC, plumbing, and electrical solutions you can trust, with guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             
             <Button 
-              variant="" 
               size="lg" 
               className="text-lg   text-white hover:bg-white hover:text-blue bg-orange"
               asChild

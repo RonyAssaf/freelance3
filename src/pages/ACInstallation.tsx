@@ -8,7 +8,7 @@ const ACInstallation = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">AC Installation & Replacement</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          A new cooling system delivers exceptional comfort and energy savings. Whether your old AC has stopped working or you want an energy-efficient upgrade, Nextris can handle all your installation and replacement needs.
+          A new cooling system delivers exceptional comfort and energy savings. Whether your old AC has stopped working or you want an energy-efficient upgrade, Proluma can handle all your installation and replacement needs.
         </p>
         <a
           href="tel:3139003211"
@@ -20,9 +20,9 @@ const ACInstallation = () => {
 
       {/* Content Section */}
       <section className="py-16 px-6 md:px-20 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6 text-gray-800">Why Choose Nextris?</h2>
+        <h2 className="text-3xl font-semibold mb-6 text-gray-800">Why Choose Proluma?</h2>
         <p className="text-gray-700 mb-6">
-          Got an AC emergency? Our contractors are available 24/7. We’ll help you choose the best cooling system for your home, comfort needs, and budget. With Nextris, you’ll always receive:
+          Got an AC emergency? Our contractors are available 24/7. We’ll help you choose the best cooling system for your home, comfort needs, and budget. With Proluma, you’ll always receive:
         </p>
         <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
           <li>Free estimates and transparent pricing</li>
@@ -47,7 +47,7 @@ const ACInstallation = () => {
           </li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Unsure whether to repair or replace? Nextris will evaluate your system and provide honest recommendations, suggesting replacement only when it’s the best option for your needs.
+          Unsure whether to repair or replace? Proluma will evaluate your system and provide honest recommendations, suggesting replacement only when it’s the best option for your needs.
         </p>
       </section>
 

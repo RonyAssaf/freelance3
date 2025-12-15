@@ -69,7 +69,7 @@ const Navigation = () => {
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md shadow-sm h-24">
         <div className="container h-full px-6 flex justify-between items-center">
           <Link to="/">
-            <img src={logo} alt="Logo" className="h-80 w-80" />
+            <img src={logo} alt="Logo" className="h-20 w-30" />
           </Link>
 
           {/* Desktop links */}
@@ -155,7 +155,7 @@ const Navigation = () => {
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 h-20 border-b">
-          <img src={logo} className="h-80 w-80"/>
+          <img src={logo} className="h-20 w-30"/>
           <button onClick={() => setIsMenuOpen(false)}>
             <X className="w-7 h-7" />
           </button>
