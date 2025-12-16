@@ -23,15 +23,29 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Frontend-only form submission
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (!res.ok) throw new Error("Failed");
+
     setShowSuccess(true);
-    setTimeout(() => {
-      setShowSuccess(false);
-      setFormData({ name: "", email: "", phone: "", message: "" });
-    }, 3000);
-  };
+    setFormData({ name: "", email: "", phone: "", message: "" });
+
+    setTimeout(() => setShowSuccess(false), 3000);
+  } catch (err) {
+    alert("Failed to send message. Please try again.");
+  }
+};
+
 
   const contactItems = [
     {
