@@ -43,8 +43,7 @@ const Footer = () => {
                 <Mail className="w-6 h-6 text-navy-900" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-              <p className="text-gray-300 text-sm sm:text-base">info@apexlink.com</p>
-              <p className="text-gray-300 text-sm sm:text-base">sales@apexlink.com</p>
+              <p className="text-gray-300 text-sm sm:text-base">admin@pro-luma.com</p>
             </div>
 
             {/* Visit Us (WITH MAP) */}

@@ -23,27 +23,15 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-
-  try {
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-
-    if (!res.ok) throw new Error("Failed");
-
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Frontend-only form submission
     setShowSuccess(true);
-    setFormData({ name: "", email: "", phone: "", message: "" });
-
-    setTimeout(() => setShowSuccess(false), 3000);
-  } catch (err) {
-    alert("Failed to send message. Please try again.");
-  }
-};
-
+    setTimeout(() => {
+      setShowSuccess(false);
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    }, 3000);
+  };
 
   const contactItems = [
     {
@@ -54,7 +42,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["info@apexlinklogistics.com", "sales@apexlinklogistics.com"]
+      details: ["admin@pro-luma.com"]
     },
     {
       icon: MapPin,
@@ -245,7 +233,7 @@ const Contact = () => {
               className="text-lg   text-white hover:bg-white hover:text-blue bg-orange"
               asChild
             >
-              <a href="tel:18002739564">Call Now: +1 (561) 933 9296</a>
+              <a href="tel:15619339296">Call Now: +1 (561) 933 9296</a>
             </Button>
           </div>
         </div>
