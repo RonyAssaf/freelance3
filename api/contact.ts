@@ -6,23 +6,22 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(405).json({ message: "Method not allowed" });
   }
 
-  const { name, email, phone, message } = req.body;
+  const { name, email, phone, message } = req.body ?? {};
 
   if (!name || !email || !phone || !message) {
     return res.status(400).json({ message: "Missing fields" });
   }
 
+  // ✅ SMTP RELAY TRANSPORT (NO AUTH, NO PASSWORD)
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
+    host: "smtp-relay.gmail.com",
+    port: 587,
+    secure: false,
   });
 
   try {
     await transporter.sendMail({
-      from: `"Website Contact" <${process.env.EMAIL_USER}>`,
+      from: "Pro-Luma Website <admin@pro-luma.com>",
       to: "admin@pro-luma.com",
       replyTo: email,
       subject: "New Contact Form Submission",
@@ -31,13 +30,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Message:</strong><br/>${message}</p>
+        <p><strong>Message:</strong><br/>${String(message).replace(/\n/g, "<br/>")}</p>
       `,
     });
 
     return res.status(200).json({ success: true });
   } catch (err) {
-    console.error(err);
+    console.error("EMAIL ERROR:", err);
     return res.status(500).json({ message: "Email failed to send" });
   }
 }
