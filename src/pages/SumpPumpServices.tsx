@@ -11,10 +11,10 @@ const SumpPumpServices = () => {
           Prevent basement floods with professional sump pump installation, replacement, and maintenance. Masterfix offers free estimates and same-day service.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -35,7 +35,7 @@ const SumpPumpServices = () => {
         </p>
 
         <p className="text-gray-700">
-          Schedule your sump pump service today by calling <a href="tel:3139003211" className="text-blue-600 font-semibold">313-900-3211</a> or contacting us online.
+          Schedule your sump pump service today by calling <a href="tel:+15619339296" className="text-blue-600 font-semibold">313-900-3211</a> or contacting us online.
         </p>
       </section>
 

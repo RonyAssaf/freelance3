@@ -11,10 +11,10 @@ const DuctRepair = () => {
           Improve your HVAC efficiency, comfort, and indoor air quality with expert duct repair and sealing from Masterfix. Our skilled technicians ensure top-notch service every time.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 

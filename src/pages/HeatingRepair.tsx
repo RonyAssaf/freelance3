@@ -12,10 +12,10 @@ const HeatingRepair = () => {
           Even in colder months, Proluma ensures your home stays warm and comfortable. Our expert team provides fast, reliable heating system repair services.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -45,7 +45,7 @@ const HeatingRepair = () => {
         </ul>
 
         <p className="mt-6 text-gray-700">
-          If you notice any of these signs, call (313) 900-3211 or contact Proluma online for expert heating repair. We’re available 24/7.
+          If you notice any of these signs, +1 (561) 933 9296 or contact Proluma online for expert heating repair. We’re available 24/7.
         </p>
 
         {/* Why Choose Proluma Section */}

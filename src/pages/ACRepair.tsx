@@ -11,10 +11,10 @@ const ACRepair = () => {
           A new cooling system provides superior comfort and savings on energy bills. Whether your AC has stopped working or you’re upgrading to an energy-efficient model, Proluma is ready to handle your installation and replacement needs.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 

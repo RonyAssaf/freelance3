@@ -12,10 +12,10 @@ const HeatingInstallation = () => {
           If your heater is over 10 years old, it’s more likely to break down, leading to costly and inconvenient repairs. Proluma offers comprehensive heating replacement and installation services to keep your home warm and efficient all winter long.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 

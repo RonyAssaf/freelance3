@@ -247,7 +247,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               className="text-lg   text-white hover:bg-white hover:text-blue bg-orange"
               asChild
             >
-              <a href="tel:15619339296">Call Now: +1 (561) 933 9296</a>
+              <a href="tel:+15619339296">Call Now: +1 (561) 933 9296</a>
             </Button>
           </div>
         </div>

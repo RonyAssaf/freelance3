@@ -11,10 +11,10 @@ const Furnaces = () => {
           Proluma provides reliable furnace services year-round, including repair, installation, replacement, and maintenance, ensuring your home stays warm and comfortable.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -58,7 +58,7 @@ const Furnaces = () => {
           Protect your investment with annual furnace maintenance. Our technicians inspect, lubricate, and clean your furnace to ensure efficient performance and safety. Regular maintenance catches small issues before they become costly repairs and extends the lifespan of your system.
         </p>
         <p className="text-gray-700 mb-6">
-          For optimal performance, schedule furnace maintenance before the cold season begins. Call (313) 900-3211 or contact Proluma online today!
+          For optimal performance, schedule furnace maintenance before the cold season begins. +1 (561) 933 9296 or contact Proluma online today!
         </p>
 
         <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">Why Choose Proluma for Furnace Solutions?</h2>

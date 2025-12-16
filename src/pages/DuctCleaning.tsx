@@ -11,10 +11,10 @@ const DuctCleaning = () => {
           Masterfix provides expert duct cleaning to remove dust, allergens, and pollutants from your home, improving indoor air quality and comfort.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -45,7 +45,7 @@ const DuctCleaning = () => {
         </p>
 
         <p className="text-gray-700 mb-6">
-          Schedule duct cleaning online or call (313) 900-3211 today.
+          Schedule duct cleaning online or +1 (561) 933 9296 today.
         </p>
       </section>
 

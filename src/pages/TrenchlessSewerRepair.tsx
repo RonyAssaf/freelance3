@@ -11,10 +11,10 @@ const TrenchlessSewerRepair = () => {
           Masterfix provides expert trenchless sewer repair services to restore water flow efficiently and safely. Our licensed technicians use advanced technology and proven methods for long-lasting results.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -36,7 +36,7 @@ const TrenchlessSewerRepair = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          When your sewer line breaks, trust Masterfix for professional trenchless repairs that minimize disruption and restore your plumbing efficiently. Call (313) 900-3211 to schedule service today!
+          When your sewer line breaks, trust Masterfix for professional trenchless repairs that minimize disruption and restore your plumbing efficiently. +1 (561) 933 9296 to schedule service today!
         </p>
       </section>
 

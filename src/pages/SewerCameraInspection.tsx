@@ -12,10 +12,10 @@ const SewerCameraInspection = () => {
           Masterfix uses advanced video pipe inspections to locate clogs, breaks, and other damage without digging. Fast, precise, and non-intrusive diagnostics for your plumbing and sewer lines.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -41,7 +41,7 @@ const SewerCameraInspection = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          For trusted, non-intrusive pipe diagnostics, schedule a video pipe inspection with Masterfix today. Call (313) 900-3211.
+          For trusted, non-intrusive pipe diagnostics, schedule a video pipe inspection with Masterfix today. +1 (561) 933 9296.
         </p>
       </section>
 

@@ -11,10 +11,10 @@ const HydroJetting = () => {
           Masterfix provides expert hydro jetting to clear stubborn clogs quickly and effectively, restoring your home’s plumbing system.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -55,7 +55,7 @@ const HydroJetting = () => {
         </ul>
 
         <p className="text-gray-700">
-          Discover the Masterfix difference. Call (313) 900-3211 to schedule hydro jetting today.
+          Discover the Masterfix difference. +1 (561) 933 9296 to schedule hydro jetting today.
         </p>
       </section>
 

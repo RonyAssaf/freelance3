@@ -11,10 +11,10 @@ const Repiping = () => {
           Masterfix provides expert piping and repiping services for homes and commercial properties. We work with copper and PEX piping to provide durable, reliable solutions.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -46,7 +46,7 @@ const Repiping = () => {
         </p>
 
         <p className="text-gray-700">
-          Contact Masterfix online or call <a href="tel:3139003211" className="text-blue-600 font-semibold">313-900-3211</a> to schedule repiping or piping services today!
+          Contact Masterfix online or call <a href="tel:+15619339296" className="text-blue-600 font-semibold">313-900-3211</a> to schedule repiping or piping services today!
         </p>
       </section>
 

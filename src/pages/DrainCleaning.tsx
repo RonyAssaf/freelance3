@@ -11,10 +11,10 @@ const DrainCleaning = () => {
           Clogged sinks and drains? Masterfix offers top-rated drain cleaning, repair, and replacement services. Our licensed plumbers are available 24/7 for emergency plumbing needs.
         </p>
         <a
-          href="tel:3139003211"
+          href="tel:+15619339296"
           className="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100 transition"
         >
-          Call (313) 900-3211
+          +1 (561) 933 9296
         </a>
       </section>
 
@@ -44,7 +44,7 @@ const DrainCleaning = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          Don’t try to solve drain issues alone—call the local experts at Masterfix for fast, effective, and affordable plumbing solutions. Call (313) 900-3211 or contact us online today!
+          Don’t try to solve drain issues alone—call the local experts at Masterfix for fast, effective, and affordable plumbing solutions. +1 (561) 933 9296 or contact us online today!
         </p>
       </section>
 
