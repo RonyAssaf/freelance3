@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/logistics-hero.jpg";
+import heroImage from "@/assets/logistics-hero.mp4";
 import Navigation from "./Navigation";
 import { Link } from "react-router-dom";
 
@@ -10,12 +10,15 @@ const Hero = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <video
+        autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover" 
           src={heroImage} 
-          alt="Modern logistics warehouse with advanced technology and automation systems"
-          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-600/80 to-navy-900/70"></div>
+        <div className="absolute inset-0 bg-black/55 backdrop-blur-[2px]"></div>
       </div>
       
       {/* Content */}
@@ -25,7 +28,7 @@ const Hero = () => {
             Welcome To
             <span className="text-transparent bg-orange bg-clip-text"> Proluma</span>
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 leading-relaxed">
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 text-grey-200 leading-relaxed">
            Expert HVAC, plumbing, and electrical solutions you can trust, with guaranteed satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

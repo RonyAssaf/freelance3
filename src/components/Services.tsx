@@ -4,17 +4,17 @@ const services = [
   {
     icon: Warehouse,
     title: "HVAC",
-    description: "Proluma Service Solutions provides reliable general contracting across Texas with a focus on quality, efficiency, and trusted service."
+    description: "Proluma Service Solutions provides reliable general contracting across Florida with a focus on quality, efficiency, and trusted service."
   },
   {
     icon: Truck,
     title: "Handyman",
-    description: "Proluma Service Solutions provides reliable handyman services across Texas, handling repairs, maintenance, and upgrades with efficient, quality workmanship."
+    description: "Proluma Service Solutions provides reliable handyman services across Florida, handling repairs, maintenance, and upgrades with efficient, quality workmanship."
   },
   {
     icon: Package,
     title: "Plumbing",
-    description: "Proluma Service Solutions delivers reliable plumbing services across Texas, providing efficient repairs and maintenance to keep your systems running smoothly."
+    description: "Proluma Service Solutions delivers reliable plumbing services across Florida, providing efficient repairs and maintenance to keep your systems running smoothly."
   }
 ];
 

@@ -45,7 +45,7 @@ const LeakDetection = () => {
         </p>
 
         <p className="text-gray-700">
-          Call <a href="tel:+15619339296" className="text-blue-600 font-semibold">313-900-3211</a> or contact us online for fast, reliable leak detection and repair service.
+          Call <a href="tel:+15619339296" className="text-blue-600 font-semibold">+1 (561) 933 9296</a> or contact us online for fast, reliable leak detection and repair service.
         </p>
       </section>
 

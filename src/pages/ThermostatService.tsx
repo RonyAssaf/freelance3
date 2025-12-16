@@ -45,7 +45,7 @@ const ThermostatService = () => {
         </p>
 
         <p className="text-gray-700 mb-6">
-          Ready to upgrade to a smart thermostat? Call Proluma today at (313) 900-3211 or contact us online to schedule your thermostat installation!
+          Ready to upgrade to a smart thermostat? Call Proluma today at +1 (561) 933 9296 or contact us online to schedule your thermostat installation!
         </p>
       </section>
 

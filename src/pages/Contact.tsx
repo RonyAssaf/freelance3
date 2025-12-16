@@ -99,8 +99,8 @@ const handleSubmit = async (e: React.FormEvent) => {
                 Get In Touch
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Our team of logistics professionals is ready to help you streamline your supply chain 
-                operations. Contact us today for a free consultation and custom quote.
+               Our skilled plumbers and maintenance experts are ready to handle repairs, installations, 
+               and everyday fixes with precision and care. Contact us today for reliable service and a free quote.
               </p>
 
               <div className="space-y-6">

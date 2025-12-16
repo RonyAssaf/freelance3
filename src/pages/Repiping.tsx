@@ -46,7 +46,7 @@ const Repiping = () => {
         </p>
 
         <p className="text-gray-700">
-          Contact Masterfix online or call <a href="tel:+15619339296" className="text-blue-600 font-semibold">313-900-3211</a> to schedule repiping or piping services today!
+          Contact Masterfix online or call <a href="tel:+15619339296" className="text-blue-600 font-semibold">+1 (561) 933 9296</a> to schedule repiping or piping services today!
         </p>
       </section>
 

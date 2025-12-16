@@ -47,9 +47,8 @@ By maintaining continuous, direct communication with our clients and team manage
               <div className="bg-secondary p-8 rounded-lg shadow-soft">
                 <h3 className="text-2xl font-bold text-blue mb-6">Our Mission</h3>
                 <blockquote className="text-lg text-muted-foreground italic leading-relaxed mb-6">
-                  "To empower businesses with seamless, technology-driven logistics solutions that 
-                  optimize operations, reduce costs, and accelerate growth while maintaining the 
-                  highest standards of service excellence."
+                  To provide homeowners and businesses with reliable, high-quality plumbing and general maintenance solutions that ensure safety,
+                   comfort, and peace of mind—delivered through skilled craftsmanship, timely service, and a commitment to excellence.
                 </blockquote>
                 <div className="border-t pt-6">
                   <h4 className="text-xl font-semibold text-blue mb-4">Our Vision</h4>

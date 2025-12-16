@@ -35,7 +35,7 @@ const SumpPumpServices = () => {
         </p>
 
         <p className="text-gray-700">
-          Schedule your sump pump service today by calling <a href="tel:+15619339296" className="text-blue-600 font-semibold">313-900-3211</a> or contacting us online.
+          Schedule your sump pump service today by calling <a href="tel:+15619339296" className="text-blue-600 font-semibold">+1 (561) 933 9296</a> or contacting us online.
         </p>
       </section>
 

@@ -47,18 +47,10 @@ const ACMaintenance = () => {
         </ul>
 
         <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">The Proluma Plan: Money-Saving Maintenance Program</h2>
+       
+        
         <p className="text-gray-700 mb-6">
-          Our maintenance plan keeps your HVAC system at its best, offering exclusive benefits:
-        </p>
-        <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
-          <li>20% discount on repairs</li>
-          <li>10% discount on new system purchases</li>
-          <li>Annual AC and heating tune-ups</li>
-          <li>Waived service fees</li>
-          <li>Same-day service</li>
-        </ul>
-        <p className="text-gray-700 mb-6">
-          To join our Proluma Plan or schedule preventive maintenance, call us at (313) 900-3211 or contact us online today!
+          To join our Proluma Plan or schedule preventive maintenance, call us at +1 (561) 933 9296 or contact us online today!
         </p>
       </section>
 

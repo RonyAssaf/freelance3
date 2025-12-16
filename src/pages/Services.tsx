@@ -5,9 +5,9 @@ import Navigation from "@/components/Navigation";
 
 const services = [
   {
-    icon: Hand,
+    icon: Warehouse,
     title: "General Maintenance",
-    description: "TopNotch Service Solutions delivers reliable general contracting across Texas, handling everything from small repairs to full builds. We’re committed to quality, efficiency, and honest service you can count on.",
+    description: "TopNotch Service Solutions delivers reliable general contracting across Florida, handling everything from small repairs to full builds. We’re committed to quality, efficiency, and honest service you can count on.",
     features: [
       "🏗️ Commercial & residential projects",
       "🔧 Renovations, repairs, and construction",
@@ -20,7 +20,7 @@ const services = [
   {
     icon: Ship,
     title: "Plumbing",
-    description: "Proluma Service Solutions provides trusted plumbing services across Texas for both homes and businesses. From quick repairs to full system maintenance, we deliver efficient, reliable solutions that keep your plumbing running right.",
+    description: "Proluma Service Solutions provides trusted plumbing services across Florida for both homes and businesses. From quick repairs to full system maintenance, we deliver efficient, reliable solutions that keep your plumbing running right.",
     features: [
       "🚰 Residential & commercial plumbing",
       "🔧 Repairs, maintenance, and installations",

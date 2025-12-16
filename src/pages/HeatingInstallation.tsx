@@ -29,7 +29,7 @@ const HeatingInstallation = () => {
           When you trust Proluma to replace your home’s outdated or malfunctioning furnace, our experienced technicians ensure a precise installation so your new system operates perfectly and lasts for years. We thoroughly inspect and test your new heating system to guarantee efficient, consistent comfort.
         </p>
         <p className="text-gray-700 mb-6">
-          Let Proluma help keep your home cozy this winter with our expert heating installation services. Call us at (313) 900-3211 or schedule your heating replacement services online today!
+          Let Proluma help keep your home cozy this winter with our expert heating installation services. Call us at +1 (561) 933 9296 or schedule your heating replacement services online today!
         </p>
 
         <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">Why Choose Proluma for Heating Installation & Replacement?</h2>
@@ -46,7 +46,7 @@ const HeatingInstallation = () => {
           We employ highly trained professionals who are background checked and drug tested, so you can trust our technicians to provide top-rated service in your home. We maintain upfront pricing and offer financing options to make new system installations more affordable.
         </p>
         <p className="text-gray-700 mb-6">
-          There’s no better team to trust for your home’s heating system installation and replacement — guaranteed! Call us at (313) 900-3211 or schedule your services online and join the Proluma family today!
+          There’s no better team to trust for your home’s heating system installation and replacement — guaranteed! Call us at +1 (561) 933 9296 or schedule your services online and join the Proluma family today!
         </p>
       </section>
 

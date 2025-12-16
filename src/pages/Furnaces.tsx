@@ -32,7 +32,7 @@ const Furnaces = () => {
           <li><strong>No Airflow:</strong> The blower motor may need attention if air isn’t circulating.</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Contact Proluma at (313) 900-3211 for fast, professional furnace repairs. We’re here 24/7!
+          Contact Proluma at +1 (561) 933 9296 for fast, professional furnace repairs. We’re here 24/7!
         </p>
 
         <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">Furnace Installation & Replacement</h2>
@@ -40,7 +40,7 @@ const Furnaces = () => {
           Need a new furnace or replacing an old unit? Proluma provides seamless installation and replacement services. We’ll help you choose a system that fits your home’s heating needs for maximum efficiency and comfort.
         </p>
         <p className="text-gray-700 mb-6">
-          From removing the old unit to installing and calibrating the new furnace, our team ensures a smooth, hassle-free process. Call us at (313) 900-3211 to schedule your furnace replacement.
+          From removing the old unit to installing and calibrating the new furnace, our team ensures a smooth, hassle-free process. Call us at +1 (561) 933 9296 to schedule your furnace replacement.
         </p>
 
         <h3 className="text-2xl font-semibold mb-4 text-gray-800">Gas Furnaces</h3>

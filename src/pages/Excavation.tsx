@@ -34,7 +34,7 @@ const Excavation = () => {
         </p>
 
         <p className="text-gray-700">
-          Suspect a plumbing issue? Contact Masterfix today at <a href="tel:+15619339296" className="text-green-600 font-semibold">313-900-3211</a> for expert excavation services.
+          Suspect a plumbing issue? Contact Masterfix today at <a href="tel:+15619339296" className="text-green-600 font-semibold">+1 (561) 933 9296</a> for expert excavation services.
         </p>
       </section>
 

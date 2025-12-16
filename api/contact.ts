@@ -16,10 +16,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     await resend.emails.send({
-      from: "Pro-Luma <onboarding@resend.dev>",
-replyTo: "admin@pro-luma.com",
-      replyTo: "admin@pro-luma.com",
-      subject: "New Contact Form Submission",
+  from: "Pro-Luma <onboarding@resend.dev>",
+  to: ["admin@pro-luma.com"],
+  replyTo: "admin@pro-luma.com",
+  subject: "New Contact Form Submission",
       html: `
         <h3>New Contact Request</h3>
         <p><strong>Name:</strong> ${name}</p>

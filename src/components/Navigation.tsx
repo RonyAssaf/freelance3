@@ -67,7 +67,7 @@ const Navigation = () => {
     <>
       {/* ================= MAIN NAV ================= */}
       <nav className="fixed top-0 left-0 right-0 z-[100] bg-white/95 backdrop-blur-md shadow-sm h-24">
-        <div className="container h-full px-6 flex justify-between items-center">
+        <div className="container h-full px-12 flex justify-between items-center">
           <Link to="/">
             <img src={logo} alt="Logo" className="h-20 w-30" />
           </Link>
