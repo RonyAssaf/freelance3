@@ -1,7 +1,12 @@
+import { Resend } from "resend";
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import nodemailer from "nodemailer";
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+export default async function handler(
+  req: VercelRequest,
+  res: VercelResponse
+) {
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
@@ -12,39 +17,27 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(400).json({ message: "Missing fields" });
   }
 
-  // ✅ SMTP RELAY — DOMAIN-BOUND
-  const transporter = nodemailer.createTransport({
-    host: "smtp-relay.gmail.com",
-    port: 587,
-    secure: false,
-    name: "pro-luma.com", // 🔑 forces HELO/EHLO domain
-  });
-
   try {
-    await transporter.sendMail({
+    await resend.emails.send({
       from: "Pro-Luma Website <admin@pro-luma.com>",
-      to: "admin@pro-luma.com",
+      to: ["admin@pro-luma.com"],
       replyTo: email,
-
-      // 🔑 forces envelope-from domain match
-      envelope: {
-        from: "admin@pro-luma.com",
-        to: ["admin@pro-luma.com"],
-      },
-
       subject: "New Contact Form Submission",
       html: `
-        <h3>New Contact Request</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Message:</strong><br/>${String(message).replace(/\n/g, "<br/>")}</p>
+        <div style="font-family: Arial, sans-serif; line-height: 1.6">
+          <h2>New Contact Request</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Phone:</strong> ${phone}</p>
+          <p><strong>Message:</strong></p>
+          <p>${String(message).replace(/\n/g, "<br />")}</p>
+        </div>
       `,
     });
 
     return res.status(200).json({ success: true });
-  } catch (err) {
-    console.error("EMAIL ERROR:", err);
+  } catch (error) {
+    console.error("RESEND ERROR:", error);
     return res.status(500).json({ message: "Email failed to send" });
   }
 }
