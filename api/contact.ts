@@ -11,7 +11,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (!name || !email || !phone || !message) {
     return res.status(400).json({ message: "Missing fields" });
   }
-
+console.log("USING SMTP RELAY - NO AUTH");
   // ✅ SMTP RELAY TRANSPORT (NO AUTH, NO PASSWORD)
   const transporter = nodemailer.createTransport({
     host: "smtp-relay.gmail.com",
