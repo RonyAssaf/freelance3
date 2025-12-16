@@ -11,12 +11,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (!name || !email || !phone || !message) {
     return res.status(400).json({ message: "Missing fields" });
   }
-console.log("USING SMTP RELAY - NO AUTH");
-  // ✅ SMTP RELAY TRANSPORT (NO AUTH, NO PASSWORD)
+
+  // ✅ SMTP RELAY — DOMAIN-BOUND
   const transporter = nodemailer.createTransport({
     host: "smtp-relay.gmail.com",
     port: 587,
     secure: false,
+    name: "pro-luma.com", // 🔑 forces HELO/EHLO domain
   });
 
   try {
@@ -24,6 +25,13 @@ console.log("USING SMTP RELAY - NO AUTH");
       from: "Pro-Luma Website <admin@pro-luma.com>",
       to: "admin@pro-luma.com",
       replyTo: email,
+
+      // 🔑 forces envelope-from domain match
+      envelope: {
+        from: "admin@pro-luma.com",
+        to: ["admin@pro-luma.com"],
+      },
+
       subject: "New Contact Form Submission",
       html: `
         <h3>New Contact Request</h3>
