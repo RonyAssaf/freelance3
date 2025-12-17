@@ -45,7 +45,7 @@ const HeatingRepair = () => {
         </ul>
 
         <p className="mt-6 text-gray-700">
-          If you notice any of these signs, +1 (561) 933 9296 or contact Proluma online for expert heating repair. We’re available 24/7.
+          If you notice any of these signs, +1 (561) 933 9296 or contact Proluma online for expert heating repair. We’re available From monday to friday 9AM to 7PM.
         </p>
 
         {/* Why Choose Proluma Section */}

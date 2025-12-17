@@ -22,7 +22,7 @@ const MapModal = ({ open, onClose }: MapModalProps) => {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 z-10 bg-white rounded-full p-2 shadow hover:bg-gray-100 transition"
+          className="absolute top-4 right-3 z-10 bg-white rounded-full p-2 shadow hover:bg-gray-100 transition"
         >
           <X size={18} />
         </button>
@@ -40,7 +40,7 @@ const MapModal = ({ open, onClose }: MapModalProps) => {
 
           <Marker position={position}>
             <Popup>
-              <strong>ApexLink Logistics</strong>
+              <strong>Proluma</strong>
               <br />
               250 Congress Park Dr, Apt 320
               <br />

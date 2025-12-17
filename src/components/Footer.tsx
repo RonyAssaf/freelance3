@@ -17,7 +17,7 @@ const Footer = () => {
               Ready to Optimize Your Supply Chain?
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Get a free consultation and discover how ApexLink can transform your logistics operations.
+             Get a free consultation and discover how our expert handyman and HVAC services can keep your home or business comfortable, safe, and running smoothly.
             </p>
             <Link to="/contact">
               <Button variant="cta" size="lg" className="text-lg   text-white hover:bg-white hover:text-blue bg-orange">
@@ -73,32 +73,22 @@ const Footer = () => {
           {/* Navigation Links */}
           <div className="border-t border-gray-700 pt-8 mb-8">
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
-              <Link to="/" className="text-gray-300 hover:text-accent transition-colors">
+              <Link to="/" className="text-gray-300 hover:text-orange transition-colors">
                 Home
               </Link>
-              <Link to="/about" className="text-gray-300 hover:text-accent transition-colors">
+              <Link to="/about" className="text-gray-300 hover:text-orange transition-colors">
                 About Us
               </Link>
-              <Link to="/services" className="text-gray-300 hover:text-accent transition-colors">
+              <Link to="/services" className="text-gray-300 hover:text-orange transition-colors">
                 Services
               </Link>
-              <Link to="/contact" className="text-gray-300 hover:text-accent transition-colors">
+              <Link to="/contact" className="text-gray-300 hover:text-orange transition-colors">
                 Contact
               </Link>
             </div>
           </div>
 
-          {/* Bottom Bar */}
-          <div className="border-t border-gray-700 pt-8 text-center">
-            <div className="mb-4">
-              <h3 className="text-xl md:text-2xl font-bold text-transparent bg-orange bg-clip-text">
-                Proluma
-              </h3>
-            </div>
-            <p className="text-gray-400 text-xs sm:text-sm">
-              © 2024 ApexLink Logistics. All rights reserved. | Privacy Policy | Terms of Service
-            </p>
-          </div>
+          
         </div>
       </footer>
 

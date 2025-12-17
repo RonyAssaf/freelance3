@@ -22,7 +22,7 @@ const ACRepair = () => {
       <section className="py-16 px-6 md:px-20 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">Why Choose Proluma?</h2>
         <p className="text-gray-700 mb-6">
-          Got an AC emergency? Our contractors are available 24/7. We’ll help you select the best cooling system for your home, comfort needs, and budget. With Proluma, you get:
+          Got an AC emergency? Our contractors are available From monday to friday 9AM to 7PM. We’ll help you select the best cooling system for your home, comfort needs, and budget. With Proluma, you get:
         </p>
         <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
           <li>Free estimates and transparent pricing</li>

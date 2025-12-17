@@ -14,10 +14,10 @@ const About = () => {
       <section className="py-20 bg-gradient-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            About ApexLink Logistics
+            About Proluma
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-200 animate-slide-up">
-            Two decades of innovation, excellence, and partnership in supply chain solutions
+           Delivering Reliable Plumbing, Handyman, and HVAC Solutions Built on Quality and Trust
           </p>
         </div>
       </section>

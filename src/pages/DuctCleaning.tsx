@@ -8,7 +8,7 @@ const DuctCleaning = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Duct Cleaning</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Masterfix provides expert duct cleaning to remove dust, allergens, and pollutants from your home, improving indoor air quality and comfort.
+          Proluma provides expert duct cleaning to remove dust, allergens, and pollutants from your home, improving indoor air quality and comfort.
         </p>
         <a
           href="tel:+15619339296"
@@ -21,7 +21,7 @@ const DuctCleaning = () => {
       {/* Content Section */}
       <section className="py-16 px-6 md:px-20 max-w-5xl mx-auto">
         <p className="text-gray-700 mb-6">
-          With our job done right guarantee, you can trust Masterfix to go the extra mile for exceptional results. We also provide upfront pricing so there are no hidden fees.
+          With our job done right guarantee, you can trust Proluma to go the extra mile for exceptional results. We also provide upfront pricing so there are no hidden fees.
         </p>
 
         <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">Benefits of Air Duct Cleaning</h2>

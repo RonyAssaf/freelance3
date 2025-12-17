@@ -6,15 +6,15 @@ import Navigation from "@/components/Navigation";
 const services = [
   {
     icon: Warehouse,
-    title: "General Maintenance",
-    description: "TopNotch Service Solutions delivers reliable general contracting across Florida, handling everything from small repairs to full builds. We’re committed to quality, efficiency, and honest service you can count on.",
+    title: "HVAC",
+    description: "Our HVAC services are designed to keep your home or business comfortable year-round. From routine maintenance to system repairs and efficiency improvements, our experienced technicians deliver reliable heating and cooling solutions tailored to your needs.",
     features: [
-      "🏗️ Commercial & residential projects",
-      "🔧 Renovations, repairs, and construction",
-      "⏱️ Efficient, detail-driven work",
-      "💬 Responsive, trustworthy team"
+      "🌡️ Heating & Cooling Systems",
+      "🛠️ Preventative Maintenance & Repairs",
+      "⚡ Energy-Efficient Solutions",
+      "🤝 Reliable & Skilled Technicians"
     ],
-    benefits: "Perfect Ideal for routine maintenance, preventative care, and general upkeep to keep your property running smoothly year-round."
+    benefits: "Perfect for routine HVAC maintenance, preventative care, and timely repairs to ensure consistent comfort and efficiency throughout the year."
   },
  
   {
@@ -46,7 +46,7 @@ const Services = () => {
             Our Services
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 animate-slide-up">
-            Comprehensive logistics solutions tailored to meet your unique transportation and warehousing needs
+            Comprehensive HVAC and plumbing services designed to support reliable performance, safety, and year-round comfort.
           </p>
         </div>
       </section>

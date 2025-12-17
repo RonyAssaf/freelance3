@@ -8,7 +8,7 @@ const HydroJetting = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Hydro Jetting Services</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Masterfix provides expert hydro jetting to clear stubborn clogs quickly and effectively, restoring your home’s plumbing system.
+          Proluma provides expert hydro jetting to clear stubborn clogs quickly and effectively, restoring your home’s plumbing system.
         </p>
         <a
           href="tel:+15619339296"
@@ -42,12 +42,12 @@ const HydroJetting = () => {
 
         <h3 className="text-2xl font-semibold mb-4 text-gray-800">Hydro Jetting vs. Drain Snaking</h3>
         <p className="text-gray-700 mb-6">
-          Hydro jetting flushes a sewer line clean of sludge, roots, and stubborn debris, while drain snaking breaks up clogs but may leave residue on the pipe walls. Your Masterfix plumber will recommend the best method for your pipes.
+          Hydro jetting flushes a sewer line clean of sludge, roots, and stubborn debris, while drain snaking breaks up clogs but may leave residue on the pipe walls. Your Proluma plumber will recommend the best method for your pipes.
         </p>
 
-        <h3 className="text-2xl font-semibold mb-4 text-gray-800">Why Choose Masterfix?</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-gray-800">Why Choose Proluma?</h3>
         <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
-          <li>24/7 emergency plumbing services</li>
+          <li>From monday to friday 9AM to 7PM emergency plumbing services</li>
           <li>Same-day services</li>
           <li>VIP experience</li>
           <li>Background-checked technicians</li>
@@ -55,7 +55,7 @@ const HydroJetting = () => {
         </ul>
 
         <p className="text-gray-700">
-          Discover the Masterfix difference. +1 (561) 933 9296 to schedule hydro jetting today.
+          Discover the Proluma difference. +1 (561) 933 9296 to schedule hydro jetting today.
         </p>
       </section>
 

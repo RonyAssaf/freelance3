@@ -8,7 +8,7 @@ const DuctInstallation = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Duct Installation</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Masterfix prioritizes your health and satisfaction with expert duct installation, using premium-quality products and methods to ensure clean air and flawless system performance.
+          Proluma prioritizes your health and satisfaction with expert duct installation, using premium-quality products and methods to ensure clean air and flawless system performance.
         </p>
         <a
           href="tel:+15619339296"
@@ -25,7 +25,7 @@ const DuctInstallation = () => {
         </p>
 
         <p className="text-gray-700 mb-6">
-          Poorly installed ductwork can cause reduced air quality, inefficiency, and costly repairs. Since most ductwork starts to degrade after 10–15 years, it’s an ideal time to consider replacement. Trust Masterfix to deliver reliable, top-tier duct installation and long-lasting results.
+          Poorly installed ductwork can cause reduced air quality, inefficiency, and costly repairs. Since most ductwork starts to degrade after 10–15 years, it’s an ideal time to consider replacement. Trust Proluma to deliver reliable, top-tier duct installation and long-lasting results.
         </p>
       </section>
 

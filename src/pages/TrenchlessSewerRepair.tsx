@@ -8,7 +8,7 @@ const TrenchlessSewerRepair = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Dependable Trenchless Sewer Repairs</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Masterfix provides expert trenchless sewer repair services to restore water flow efficiently and safely. Our licensed technicians use advanced technology and proven methods for long-lasting results.
+          Proluma provides expert trenchless sewer repair services to restore water flow efficiently and safely. Our licensed technicians use advanced technology and proven methods for long-lasting results.
         </p>
         <a
           href="tel:+15619339296"
@@ -22,7 +22,7 @@ const TrenchlessSewerRepair = () => {
       <section className="py-16 px-6 md:px-20 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">Trenchless Sewer Repairs</h2>
         <p className="text-gray-700 mb-6">
-          Masterfix technicians quickly locate sewer line damage using cameras, sensors, and other advanced tools. We can repair breaks, replace deteriorating pipes, and remove clogs including tree roots with minimal disruption to your property.
+          Proluma technicians quickly locate sewer line damage using cameras, sensors, and other advanced tools. We can repair breaks, replace deteriorating pipes, and remove clogs including tree roots with minimal disruption to your property.
         </p>
 
         <h3 className="text-2xl font-semibold mb-4 text-gray-800">Our Trenchless Sewer Repair Process:</h3>
@@ -36,7 +36,7 @@ const TrenchlessSewerRepair = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          When your sewer line breaks, trust Masterfix for professional trenchless repairs that minimize disruption and restore your plumbing efficiently. +1 (561) 933 9296 to schedule service today!
+          When your sewer line breaks, trust Proluma for professional trenchless repairs that minimize disruption and restore your plumbing efficiently. +1 (561) 933 9296 to schedule service today!
         </p>
       </section>
 

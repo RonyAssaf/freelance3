@@ -8,7 +8,7 @@ const Repiping = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Piping & Repiping Services</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Masterfix provides expert piping and repiping services for homes and commercial properties. We work with copper and PEX piping to provide durable, reliable solutions.
+          Proluma provides expert piping and repiping services for homes and commercial properties. We work with copper and PEX piping to provide durable, reliable solutions.
         </p>
         <a
           href="tel:+15619339296"
@@ -46,7 +46,7 @@ const Repiping = () => {
         </p>
 
         <p className="text-gray-700">
-          Contact Masterfix online or call <a href="tel:+15619339296" className="text-blue-600 font-semibold">+1 (561) 933 9296</a> to schedule repiping or piping services today!
+          Contact Proluma online or call <a href="tel:+15619339296" className="text-blue-600 font-semibold">+1 (561) 933 9296</a> to schedule repiping or piping services today!
         </p>
       </section>
 

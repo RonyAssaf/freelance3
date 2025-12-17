@@ -9,7 +9,7 @@ const SewerCameraInspection = () => {
 
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Sewer Camera Inspection</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Masterfix uses advanced video pipe inspections to locate clogs, breaks, and other damage without digging. Fast, precise, and non-intrusive diagnostics for your plumbing and sewer lines.
+          Proluma uses advanced video pipe inspections to locate clogs, breaks, and other damage without digging. Fast, precise, and non-intrusive diagnostics for your plumbing and sewer lines.
         </p>
         <a
           href="tel:+15619339296"
@@ -23,7 +23,7 @@ const SewerCameraInspection = () => {
       <section className="py-16 px-6 md:px-20 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">How Video Pipe Inspection Works</h2>
         <p className="text-gray-700 mb-6">
-          During a video pipe inspection, a Masterfix plumber inserts a camera-tipped rod into the drain or sewer access point. Live footage helps locate the problem, including:
+          During a video pipe inspection, a Proluma plumber inserts a camera-tipped rod into the drain or sewer access point. Live footage helps locate the problem, including:
         </p>
         <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
           <li>The exact location of clogs or breaks</li>
@@ -41,7 +41,7 @@ const SewerCameraInspection = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          For trusted, non-intrusive pipe diagnostics, schedule a video pipe inspection with Masterfix today. +1 (561) 933 9296.
+          For trusted, non-intrusive pipe diagnostics, schedule a video pipe inspection with Proluma today. +1 (561) 933 9296.
         </p>
       </section>
 

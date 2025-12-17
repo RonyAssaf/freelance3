@@ -8,7 +8,7 @@ const LeakDetection = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Leak Detection & Repair</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Hidden water leaks can cause serious damage to your property. Masterfix provides professional leak detection and repair services to protect your home or business.
+          Hidden water leaks can cause serious damage to your property. Proluma provides professional leak detection and repair services to protect your home or business.
         </p>
         <a
           href="tel:+15619339296"
@@ -22,7 +22,7 @@ const LeakDetection = () => {
       <section className="py-16 px-6 md:px-20 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">Why Schedule Leak Detection?</h2>
         <p className="text-gray-700 mb-6">
-          A hidden water leak can cause extensive property damage if not addressed promptly. Masterfix uses advanced technology, including camera line inspections, to locate even the smallest leaks.
+          A hidden water leak can cause extensive property damage if not addressed promptly. Proluma uses advanced technology, including camera line inspections, to locate even the smallest leaks.
         </p>
 
         <h3 className="text-2xl font-semibold mb-4 text-gray-800">Signs You Have a Hidden Water Leak</h3>
@@ -41,7 +41,7 @@ const LeakDetection = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          If you notice any of these signs, contact Masterfix immediately. Our expert plumbers can repair hidden water main leaks, water heater leaks, drain leaks, sewer line leaks, slab leaks, leaking valves, sump pumps, and more.
+          If you notice any of these signs, contact Proluma immediately. Our expert plumbers can repair hidden water main leaks, water heater leaks, drain leaks, sewer line leaks, slab leaks, leaking valves, sump pumps, and more.
         </p>
 
         <p className="text-gray-700">

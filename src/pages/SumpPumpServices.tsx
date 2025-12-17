@@ -8,7 +8,7 @@ const SumpPumpServices = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Sump Pump Services</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Prevent basement floods with professional sump pump installation, replacement, and maintenance. Masterfix offers free estimates and same-day service.
+          Prevent basement floods with professional sump pump installation, replacement, and maintenance. Proluma offers free estimates and same-day service.
         </p>
         <a
           href="tel:+15619339296"
@@ -27,11 +27,11 @@ const SumpPumpServices = () => {
 
         <h3 className="text-2xl font-semibold mb-4 text-gray-800">Sump Pump Installation & Replacement</h3>
         <p className="text-gray-700 mb-4">
-          Masterfix installs high-quality sump pumps to protect your home from basement floods. We perform new installations, replacements, and install battery backups that can keep pumps running up to two days during power outages.
+          Proluma installs high-quality sump pumps to protect your home from basement floods. We perform new installations, replacements, and install battery backups that can keep pumps running up to two days during power outages.
         </p>
 
         <p className="text-gray-700 mb-6">
-          Even in areas like Arizona, just an inch of water in a basement can cause thousands of dollars in damage. Protect your property with a reliable sump pump.
+          Even in areas like Florida, just an inch of water in a basement can cause thousands of dollars in damage. Protect your property with a reliable sump pump.
         </p>
 
         <p className="text-gray-700">

@@ -78,7 +78,7 @@ const Navigation = () => {
               <Link
                 key={item}
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                className="relative text-blue text-xl font-medium hover:text-accent transition"
+                className="relative text-blue text-xl font-medium hover:text-orange transition"
               >
                 {item}
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-accent transition-all duration-300 hover:w-full" />
@@ -102,7 +102,7 @@ const Navigation = () => {
           <div className="flex space-x-12">
             {subNav.map((item, i) => (
               <div key={i} className="relative group">
-                <button className="flex items-center space-x-1 text-gray-800 hover:text-accent text-lg font-medium">
+                <button className="flex items-center space-x-1 text-gray-800 hover:text-orange text-lg font-medium">
                   <span>{item.title}</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>

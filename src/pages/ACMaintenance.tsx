@@ -46,12 +46,9 @@ const ACMaintenance = () => {
           <li>Maintain warranty validity if professional maintenance is required</li>
         </ul>
 
-        <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">The Proluma Plan: Money-Saving Maintenance Program</h2>
        
         
-        <p className="text-gray-700 mb-6">
-          To join our Proluma Plan or schedule preventive maintenance, call us at +1 (561) 933 9296 or contact us online today!
-        </p>
+       
       </section>
 
       {/* Components */}

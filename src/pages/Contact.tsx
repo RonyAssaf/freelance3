@@ -84,7 +84,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             Contact Us
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-200 animate-slide-up">
-            Ready to optimize your supply chain? Get in touch with our logistics experts today.
+            Ready to keep your home or business running smoothly? Get in touch with our handyman and HVAC experts today.
           </p>
         </div>
       </section>
@@ -134,8 +134,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   Request a Free Quote
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Fill out the form below and our team will get back to you within 24 hours 
-                  with a customized logistics solution.
+                 Fill out the form below and our team will respond promptly to assist with your handyman or HVAC request.
                 </p>
 
                 {showSuccess && (
@@ -192,7 +191,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       value={formData.email}
                       onChange={handleInputChange}
                       className="w-full"
-                      placeholder="your.email@company.com"
+                      placeholder="your.email@.com"
                     />
                   </div>
 
@@ -207,7 +206,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       value={formData.message}
                       onChange={handleInputChange}
                       className="w-full min-h-[120px]"
-                      placeholder="Tell us about your logistics needs, shipment volumes, destinations, or any specific requirements..."
+                      placeholder="Tell us about your repair, maintenance, plumbing, or HVAC needs, the type of service required, or any specific requests you may have..."
                     />
                   </div>
 
@@ -238,7 +237,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             Need Immediate Assistance?
           </h2>
           <p className="text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
-            We’re here to support all your general maintenance and handyman needs, from routine repairs to complete property care.
+            We’re here to support all your general maintenance, HVAC and handyman needs, from routine repairs to complete property care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

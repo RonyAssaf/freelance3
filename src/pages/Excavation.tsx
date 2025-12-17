@@ -8,7 +8,7 @@ const Excavation = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Excavation Services</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Masterfix offers professional excavation solutions for water and sewer line repairs, minimizing disruption and restoring your service efficiently.
+          Proluma offers professional excavation solutions for water and sewer line repairs, minimizing disruption and restoring your service efficiently.
         </p>
         <a
           href="tel:+15619339296"
@@ -28,13 +28,13 @@ const Excavation = () => {
           We also offer <strong>trenchless pipe repair</strong>, a specialized technique that allows pipe repair or replacement from the inside, avoiding trench digging. This method helps preserve your landscape, driveway, or other property features.
         </p>
 
-        <h3 className="text-2xl font-semibold mb-4 text-gray-800">Why Choose Masterfix for Excavation?</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-gray-800">Why Choose Proluma for Excavation?</h3>
         <p className="text-gray-700 mb-6">
           Regardless of the excavation type, our team restores water service quickly and efficiently. We have the expertise to diagnose, plan, and execute solutions for all types of water line issues. No job is too big or small — we provide reliable service and peace of mind.
         </p>
 
         <p className="text-gray-700">
-          Suspect a plumbing issue? Contact Masterfix today at <a href="tel:+15619339296" className="text-green-600 font-semibold">+1 (561) 933 9296</a> for expert excavation services.
+          Suspect a plumbing issue? Contact Proluma today at <a href="tel:+15619339296" className="text-green-600 font-semibold">+1 (561) 933 9296</a> for expert excavation services.
         </p>
       </section>
 

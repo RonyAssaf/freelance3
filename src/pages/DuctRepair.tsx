@@ -8,7 +8,7 @@ const DuctRepair = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Duct Repair & Sealing</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Improve your HVAC efficiency, comfort, and indoor air quality with expert duct repair and sealing from Masterfix. Our skilled technicians ensure top-notch service every time.
+          Improve your HVAC efficiency, comfort, and indoor air quality with expert duct repair and sealing from Proluma. Our skilled technicians ensure top-notch service every time.
         </p>
         <a
           href="tel:+15619339296"
@@ -53,7 +53,7 @@ const DuctRepair = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          Flexible ducts usually last 10–15 years, while fiberglass or metal ducts can last 25+ years. Masterfix can design and install a duct system tailored to your home’s needs.
+          Flexible ducts usually last 10–15 years, while fiberglass or metal ducts can last 25+ years. Proluma can design and install a duct system tailored to your home’s needs.
         </p>
       </section>
 

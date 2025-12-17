@@ -8,7 +8,7 @@ const DrainCleaning = () => {
       <section className="bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-6 text-center mt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Plumbing Drain Services</h1>
         <p className="max-w-2xl mx-auto text-lg md:text-xl">
-          Clogged sinks and drains? Masterfix offers top-rated drain cleaning, repair, and replacement services. Our licensed plumbers are available 24/7 for emergency plumbing needs.
+          Clogged sinks and drains? Proluma offers top-rated drain cleaning, repair, and replacement services. Our licensed plumbers are available From monday to friday 9AM to 7PM for emergency plumbing needs.
         </p>
         <a
           href="tel:+15619339296"
@@ -32,7 +32,7 @@ const DrainCleaning = () => {
 
         <h2 className="text-3xl font-semibold mt-12 mb-6 text-gray-800">Comprehensive Drain Services</h2>
         <p className="text-gray-700 mb-6">
-          Masterfix provides a full range of drain solutions to protect and repair your plumbing system:
+          Proluma provides a full range of drain solutions to protect and repair your plumbing system:
         </p>
         <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
           <li><strong>Drain repair:</strong> Fix hairline cracks or burst pipes quickly and affordably.</li>
@@ -44,7 +44,7 @@ const DrainCleaning = () => {
         </ul>
 
         <p className="text-gray-700 mb-6">
-          Don’t try to solve drain issues alone—call the local experts at Masterfix for fast, effective, and affordable plumbing solutions. +1 (561) 933 9296 or contact us online today!
+          Don’t try to solve drain issues alone—call the local experts at Proluma for fast, effective, and affordable plumbing solutions. +1 (561) 933 9296 or contact us online today!
         </p>
       </section>
 

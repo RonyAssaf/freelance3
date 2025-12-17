@@ -46,12 +46,7 @@ const HeatingMaintenance = () => {
           <li>Maintain warranty compliance for systems requiring professional service</li>
         </ul>
 
-        <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">The Proluma Plan: Cost-Effective HVAC Tune-Up Program</h2>
-        <p className="text-gray-700 mb-6"></p>
       
-        <p className="text-gray-700 mb-6">
-          Join the Proluma Plan or schedule preventive heating maintenance today by calling +1 (561) 933 9296 or contacting us online.
-        </p>
       </section>
 
       {/* Components */}

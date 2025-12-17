@@ -13,8 +13,7 @@ const photos = [
   generalMaintenance2,
   handy1,
   plumbing,
-  plumbing1,
-  plumbing2,
+
 ];
 
 const Testimonials = () => {

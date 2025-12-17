@@ -32,7 +32,7 @@ const Furnaces = () => {
           <li><strong>No Airflow:</strong> The blower motor may need attention if air isn’t circulating.</li>
         </ul>
         <p className="text-gray-700 mb-6">
-          Contact Proluma at +1 (561) 933 9296 for fast, professional furnace repairs. We’re here 24/7!
+          Contact Proluma at +1 (561) 933 9296 for fast, professional furnace repairs. We’re here From monday to friday 9AM to 7PM!
         </p>
 
         <h2 className="text-3xl font-semibold mt-16 mb-6 text-gray-800">Furnace Installation & Replacement</h2>
